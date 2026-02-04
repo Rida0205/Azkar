@@ -63,7 +63,6 @@
             --dark-color: #1a2c3a;
             --gray-color: #5d6d7e;
             --light-gray: #f1f3f5;
-            --timeline-color: #2c786c;
             --border-radius: 12px;
             --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
             --transition: all 0.4s ease;
@@ -130,16 +129,16 @@
         }
 
         .section {
-            padding: 100px 0;
+            padding: 80px 0;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
 
         .section-title {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             position: relative;
             display: inline-block;
             margin-bottom: 1.5rem;
@@ -158,7 +157,7 @@
         }
 
         .section-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--gray-color);
             max-width: 700px;
             margin: 0 auto;
@@ -205,7 +204,7 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            padding: 20px 0;
+            padding: 15px 0;
             backdrop-filter: blur(10px);
             transform: translateY(0);
             transition: transform 0.3s ease, background-color 0.3s ease;
@@ -228,7 +227,7 @@
         }
 
         .logo h1 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-bottom: 5px;
             color: var(--dark-color);
         }
@@ -249,7 +248,7 @@
         }
 
         .tagline {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: var(--gray-color);
             margin-bottom: 0;
             font-style: italic;
@@ -259,11 +258,11 @@
         .hero {
             background: var(--hero-gradient);
             color: white;
-            padding: 180px 0 150px;
+            padding: 150px 0 100px;
             text-align: center;
             position: relative;
             overflow: hidden;
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
         }
@@ -287,9 +286,9 @@
 
         .hero-title {
             font-family: 'El Messiri', 'Tajawal', sans-serif;
-            font-size: 3.2rem;
+            font-size: 2.8rem;
             color: white;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             font-weight: 600;
             line-height: 1.4;
@@ -300,19 +299,23 @@
         .sections-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            gap: 25px;
+            margin-top: 40px;
         }
 
         .section-card {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 35px;
+            padding: 30px;
             box-shadow: var(--box-shadow);
             transition: var(--transition);
             border: 1px solid var(--light-gray);
             text-align: center;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .section-card:hover {
@@ -323,109 +326,96 @@
 
         .section-icon {
             background: linear-gradient(135deg, rgba(26, 95, 75, 0.1) 0%, rgba(13, 59, 46, 0.1) 100%);
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 25px;
+            margin: 0 auto 20px;
             color: var(--primary-color);
-            font-size: 2.2rem;
+            font-size: 1.8rem;
         }
 
         .section-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 15px;
             color: var(--dark-color);
         }
 
         .section-card p {
             color: var(--gray-color);
-            margin-bottom: 25px;
-            font-size: 1.05rem;
+            margin-bottom: 20px;
+            font-size: 1rem;
         }
 
         .section-count {
             display: inline-block;
             background-color: var(--primary-color);
             color: white;
-            padding: 8px 20px;
+            padding: 6px 15px;
             border-radius: 20px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
         }
 
         /* صفحة التفاصيل */
         .detail-page {
-            padding: 80px 0;
+            padding: 60px 0;
             min-height: 70vh;
         }
 
         .detail-header {
             background: var(--hero-gradient);
             color: white;
-            padding: 60px 0;
+            padding: 50px 0;
             border-radius: var(--border-radius);
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             text-align: center;
         }
 
         .detail-header h1 {
             color: white;
-            font-size: 2.8rem;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
         }
 
         .detail-header .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             opacity: 0.9;
         }
 
         .detail-content {
             background-color: white;
-            padding: 50px;
+            padding: 40px;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
-            line-height: 1.9;
-            font-size: 1.15rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
             border: 1px solid var(--light-gray);
         }
 
         .detail-section {
-            margin-bottom: 50px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid var(--light-gray);
+            margin-bottom: 40px;
         }
 
         .detail-section:last-child {
-            border-bottom: none;
             margin-bottom: 0;
-            padding-bottom: 0;
         }
 
         .detail-section h3 {
             color: var(--primary-color);
-            margin-bottom: 25px;
-            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-gray);
         }
 
-        .detail-section h3::after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color), transparent);
-            bottom: 0;
-            right: 0;
-        }
-
-        /* بطاقات الذكر */
+        /* بطاقات الذكر - تصميم جديد محسّن */
         .azkar-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: 1fr;
             gap: 25px;
             margin-top: 30px;
         }
@@ -435,42 +425,47 @@
             padding: 25px;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
-            border-right: 4px solid var(--accent-color);
+            border-right: 4px solid var(--primary-color);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
+            border: 1px solid var(--light-gray);
         }
 
         .zekr-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .zekr-card h4 {
-            color: var(--secondary-color);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-            line-height: 1.4;
+        .zekr-card.completed {
+            border-right-color: #28a745;
+            background-color: #f8fff9;
+        }
+
+        .zekr-number {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-color);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
         }
 
         .zekr-text {
-            font-size: 1.2rem;
-            line-height: 1.8;
+            font-size: 1.3rem;
+            line-height: 1.9;
             margin-bottom: 15px;
             color: var(--dark-color);
             text-align: right;
-            padding-right: 20px;
-            position: relative;
-        }
-
-        .zekr-text::before {
-            content: '"';
-            position: absolute;
-            right: -10px;
-            top: -10px;
-            font-size: 2.5rem;
-            color: var(--accent-light);
-            font-family: 'Cairo', sans-serif;
+            padding: 0 10px;
+            font-weight: 500;
         }
 
         .zekr-translation {
@@ -479,46 +474,58 @@
             line-height: 1.6;
             margin-bottom: 15px;
             font-style: italic;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-right: 3px solid var(--accent-light);
         }
 
         .zekr-info {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid var(--light-gray);
             flex-wrap: wrap;
             gap: 10px;
-            margin-top: 15px;
         }
 
-        .zekr-tag {
+        .zekr-reference {
             background-color: var(--light-gray);
             padding: 5px 12px;
             border-radius: 15px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--gray-color);
         }
 
+        /* عداد التكرار - تصميم محسّن */
         .repetition-counter {
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 15px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--light-gray);
+            background-color: #f8f9fa;
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            margin-top: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .counter-btn {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background-color: var(--primary-color);
             color: white;
             border: none;
-            font-size: 1.2rem;
+            font-size: 1rem;
             cursor: pointer;
             transition: var(--transition);
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
 
         .counter-btn:hover {
@@ -526,179 +533,85 @@
             transform: scale(1.1);
         }
 
+        .counter-btn.reset {
+            background-color: var(--accent-color);
+            width: auto;
+            padding: 0 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .counter-btn.reset:hover {
+            background-color: #b8941f;
+        }
+
+        .counter-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 60px;
+        }
+
         .counter-number {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary-color);
-            min-width: 50px;
-            text-align: center;
+            line-height: 1;
         }
 
-        .counter-label {
-            font-size: 0.9rem;
+        .counter-total {
+            font-size: 0.85rem;
             color: var(--gray-color);
-            text-align: center;
-            margin-top: 5px;
+            margin-top: 3px;
         }
 
-        /* أدوات التلاوة */
-        .tilawa-tools {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* إحصائيات مبسطة */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-top: 30px;
-            flex-wrap: wrap;
         }
 
-        .play-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(26, 95, 75, 0.3);
-        }
-
-        .play-btn:hover {
-            background-color: var(--secondary-color);
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(26, 95, 75, 0.4);
-        }
-
-        .play-btn.playing {
-            background-color: var(--accent-color);
-        }
-
-        /* أدعية مختارة */
-        .dua-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .dua-card {
-            background-color: #f8f9fa;
-            padding: 25px;
-            border-radius: var(--border-radius);
-            border: 1px solid var(--light-gray);
-            transition: var(--transition);
-            text-align: center;
-        }
-
-        .dua-card:hover {
-            border-color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        .dua-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        .dua-card h4 {
-            color: var(--dark-color);
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        /* أذكار الصلاة */
-        .prayer-azkar {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .prayer-card {
-            background-color: white;
-            padding: 25px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            border: 1px solid var(--light-gray);
-            transition: var(--transition);
-            height: 100%;
-        }
-
-        .prayer-card:hover {
-            border-color: var(--primary-color);
-            transform: translateY(-5px);
-        }
-
-        .prayer-time {
-            display: inline-block;
-            background: var(--prayer-gradient);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        /* اليوم الإسلامي */
-        .islamic-day {
-            background: linear-gradient(135deg, #f8f5e6 0%, #f2e8c9 100%);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .day-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .day-item {
+        .stat-card {
             background-color: white;
             padding: 20px;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
+            text-align: center;
+            border-top: 5px solid var(--primary-color);
         }
 
-        .day-item h5 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-
-        .day-item p {
-            font-size: 1.8rem;
+        .stat-number {
+            font-size: 2.2rem;
             font-weight: 700;
-            color: var(--secondary-color);
-            margin-bottom: 0;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: var(--gray-color);
+            font-size: 0.95rem;
         }
 
         /* الفوتر */
         .main-footer {
             background-color: var(--dark-color);
             color: white;
-            padding: 80px 0 30px;
+            padding: 60px 0 20px;
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
         .footer-logo h3 {
             color: white;
             margin-bottom: 10px;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         .footer-logo .tagline {
@@ -708,20 +621,21 @@
         .footer-section p {
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.6;
+            font-size: 1rem;
         }
 
         .footer-section h4 {
             color: white;
-            font-size: 1.4rem;
-            margin-bottom: 25px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
             position: relative;
-            padding-bottom: 12px;
+            padding-bottom: 10px;
         }
 
         .footer-section h4::after {
             content: '';
             position: absolute;
-            width: 60px;
+            width: 50px;
             height: 3px;
             background: linear-gradient(90deg, var(--accent-color), transparent);
             bottom: 0;
@@ -729,7 +643,7 @@
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .footer-links a {
@@ -738,11 +652,12 @@
             align-items: center;
             gap: 10px;
             transition: var(--transition);
+            font-size: 0.95rem;
         }
 
         .footer-links a:hover {
             color: white;
-            padding-right: 10px;
+            padding-right: 5px;
         }
 
         .footer-links a i {
@@ -751,14 +666,14 @@
 
         .contact-email {
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 15px 25px;
+            padding: 12px 20px;
             border-radius: var(--border-radius);
             display: inline-block;
-            margin: 15px 0;
+            margin: 10px 0;
             font-family: 'Courier New', monospace;
             direction: ltr;
             text-align: left;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -767,16 +682,16 @@
 
         .social-links {
             display: flex;
-            gap: 15px;
-            margin-top: 25px;
+            gap: 12px;
+            margin-top: 20px;
         }
 
         .social-links a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             color: white;
@@ -785,31 +700,31 @@
 
         .social-links a:hover {
             background-color: var(--primary-color);
-            transform: translateY(-5px);
+            transform: translateY(-3px);
         }
 
         .footer-bottom {
-            padding-top: 35px;
+            padding-top: 25px;
             text-align: center;
             color: rgba(255, 255, 255, 0.7);
-            font-size: 1rem;
+            font-size: 0.9rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         /* زر العودة للأعلى */
         .back-to-top {
             position: fixed;
-            bottom: 30px;
-            left: 30px;
+            bottom: 20px;
+            left: 20px;
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             cursor: pointer;
             transition: var(--transition);
             opacity: 0;
@@ -830,97 +745,13 @@
 
         /* تأثير التمرير على الهيدر */
         .header-spacer {
-            height: 80px;
+            height: 70px;
         }
 
-        /* تخصيصات إضافية */
-        .blessing {
-            font-family: 'El Messiri', sans-serif;
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            text-align: center;
-            margin: 20px 0;
-            font-weight: 600;
-        }
-
-        .tape-decoration {
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 5px 15px;
-            font-size: 0.8rem;
-            border-radius: 0 0 5px 5px;
-            transform: rotate(0deg);
-            z-index: 1;
-        }
-
-        /* مؤقت الذكر */
-        .timer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: var(--border-radius);
-        }
-
-        .timer-display {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            font-family: 'Courier New', monospace;
-        }
-
-        .timer-controls {
-            display: flex;
-            gap: 10px;
-        }
-
-        .timer-btn {
-            padding: 8px 20px;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .timer-btn:hover {
-            background-color: var(--secondary-color);
-        }
-
-        /* إحصائيات */
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .stat-card {
-            background-color: white;
-            padding: 25px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            text-align: center;
-            border-top: 5px solid var(--primary-color);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            color: var(--gray-color);
-            font-size: 1rem;
+        /* تصميم محسّن للأذكار الطويلة */
+        .long-zekr {
+            font-size: 1.2rem;
+            line-height: 1.8;
         }
 
         /* التجاوب مع الشاشات */
@@ -932,64 +763,91 @@
 
         @media (max-width: 992px) {
             .hero-title {
-                font-size: 2.7rem;
-            }
-            
-            .section-title {
-                font-size: 2.5rem;
-            }
-            
-            .section {
-                padding: 80px 0;
-            }
-            
-            .detail-content {
-                padding: 30px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 150px 0 100px;
-                min-height: 90vh;
-            }
-            
-            .hero-title {
-                font-size: 2.2rem;
-                padding: 0 15px;
+                font-size: 2.3rem;
             }
             
             .section-title {
                 font-size: 2rem;
             }
             
-            .section-subtitle {
-                font-size: 1.15rem;
+            .section {
+                padding: 60px 0;
             }
             
-            .logo h1 {
+            .detail-content {
+                padding: 30px;
+            }
+            
+            .zekr-text {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 120px 0 80px;
+                min-height: 80vh;
+            }
+            
+            .hero-title {
+                font-size: 1.9rem;
+                padding: 0 15px;
+            }
+            
+            .section-title {
                 font-size: 1.8rem;
             }
             
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+            
             .back-to-top {
-                bottom: 20px;
-                left: 20px;
-                width: 50px;
-                height: 50px;
+                bottom: 15px;
+                left: 15px;
+                width: 45px;
+                height: 45px;
             }
             
             .sections-grid {
                 grid-template-columns: 1fr;
             }
             
-            .azkar-grid,
-            .dua-grid,
-            .prayer-azkar {
-                grid-template-columns: 1fr;
+            .detail-content,
+            .detail-header {
+                padding: 20px;
             }
             
-            .detail-content {
-                padding: 20px;
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .contact-email {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+            }
+            
+            .repetition-counter {
+                padding: 10px 15px;
+                gap: 10px;
+            }
+            
+            .counter-btn {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .counter-number {
+                font-size: 1.6rem;
+            }
+            
+            .zekr-text {
+                font-size: 1.15rem;
             }
         }
 
@@ -999,12 +857,11 @@
             }
             
             .hero {
-                padding: 130px 0 80px;
-                min-height: 80vh;
+                padding: 100px 0 60px;
             }
             
             .hero-title {
-                font-size: 1.9rem;
+                font-size: 1.7rem;
             }
             
             .btn {
@@ -1013,53 +870,89 @@
             }
             
             .section {
-                padding: 60px 0;
+                padding: 50px 0;
             }
             
             .section-card {
-                padding: 25px;
+                padding: 25px 20px;
             }
             
-            .detail-content,
-            .detail-header {
-                padding: 30px 20px;
+            .section-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.6rem;
             }
             
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .contact-email {
-                font-size: 1rem;
-                padding: 12px 20px;
-            }
-            
-            .repetition-counter {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .counter-number {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .day-info {
-                grid-template-columns: 1fr;
-            }
-            
-            .timer-display {
-                font-size: 2rem;
-            }
-            
-            .stat-number {
-                font-size: 2rem;
+            .zekr-card {
+                padding: 20px;
             }
             
             .zekr-text {
                 font-size: 1.1rem;
+                padding: 0;
+            }
+            
+            .repetition-counter {
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .counter-display {
+                order: 1;
+                min-width: 50px;
+            }
+            
+            .counter-btn.minus {
+                order: 2;
+            }
+            
+            .counter-btn.plus {
+                order: 3;
+            }
+            
+            .counter-btn.reset {
+                order: 4;
+                margin-top: 10px;
+                width: 100%;
+                border-radius: 10px;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .zekr-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .repetition-counter {
+                flex-wrap: wrap;
+            }
+            
+            .counter-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 0.9rem;
+            }
+            
+            .counter-number {
+                font-size: 1.4rem;
+            }
+            
+            .detail-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-title {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -1158,46 +1051,29 @@
         </div>
     </section>
 
-    <!-- صفحة أذكار الصباح -->
+    <!-- صفحات التفاصيل -->
     <section id="morning-detail" class="section detail-page" style="display: none;">
-        <div class="container">
-            <!-- سيتم ملؤها بالجافاسكريبت -->
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- صفحة أذكار المساء -->
+    
     <section id="evening-detail" class="section detail-page" style="display: none;">
-        <div class="container">
-            <!-- سيتم ملؤها بالجافاسكريبت -->
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- صفحة أذكار النوم -->
+    
     <section id="sleep-detail" class="section detail-page" style="display: none;">
-        <div class="container">
-            <!-- سيتم ملؤها بالجافاسكريبت -->
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- صفحة أذكار الصلاة -->
+    
     <section id="prayer-detail" class="section detail-page" style="display: none;">
-        <div class="container">
-            <!-- سيتم ملؤها بالجافاسكريبت -->
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- صفحة أذكار اليوم والليلة -->
+    
     <section id="daily-detail" class="section detail-page" style="display: none;">
-        <div class="container">
-            <!-- سيتم ملؤها بالجافاسكريبت -->
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- صفحة الأدعية القرآنية -->
+    
     <section id="quranic-detail" class="section detail-page" style="display: none;">
-        <div class="container">
-            <!-- سيتم ملؤها بالجافاسكريبت -->
-        </div>
+        <div class="container"></div>
     </section>
 
     <!-- فوتر -->
@@ -1282,106 +1158,106 @@
                 azkar: [
                     {
                         id: 1,
-                        text: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ',
+                        text: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ',
+                        translation: 'الاستعاذة بالله من الشيطان الرجيم',
+                        repetition: 1,
+                        reference: 'مقدمة التلاوة'
+                    },
+                    {
+                        id: 2,
+                        text: 'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ',
                         translation: 'آية الكرسي - من قالها حين يصبح أجير من الجن حتى يمسي',
                         repetition: 1,
                         reference: 'البقرة: 255'
                     },
                     {
-                        id: 2,
+                        id: 3,
                         text: 'قُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
                         translation: 'سورة الإخلاص - من قالها حين يصبح وحين يمسي كفته من كل شيء',
                         repetition: 3,
                         reference: 'سورة الإخلاص'
                     },
                     {
-                        id: 3,
+                        id: 4,
                         text: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
                         translation: 'سورة الفلق - من قالها حين يصبح وحين يمسي كفته من كل شيء',
                         repetition: 3,
                         reference: 'سورة الفلق'
                     },
                     {
-                        id: 4,
+                        id: 5,
                         text: 'قُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَٰهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
                         translation: 'سورة الناس - من قالها حين يصبح وحين يمسي كفته من كل شيء',
                         repetition: 3,
                         reference: 'سورة الناس'
                     },
                     {
-                        id: 5,
-                        text: 'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
+                        id: 6,
+                        text: 'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ',
                         translation: 'من قالها حين يصبح أدى شكر يومه',
                         repetition: 1,
                         reference: 'مسلم'
                     },
                     {
-                        id: 6,
+                        id: 7,
                         text: 'اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ',
                         translation: 'دعاء الصباح',
                         repetition: 1,
                         reference: 'الترمذي'
                     },
                     {
-                        id: 7,
+                        id: 8,
                         text: 'اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ',
-                        translation: 'من قالها موقناً بها حين يمسي فمات من ليلته دخل الجنة',
+                        translation: 'من قالها موقناً بها حين يصبح دخل الجنة',
                         repetition: 1,
                         reference: 'البخاري'
                     },
                     {
-                        id: 8,
+                        id: 9,
                         text: 'اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ',
                         translation: 'من قالها أعتقه الله من النار',
-                        repetition: 4,
+                        repetition: 1,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 9,
+                        id: 10,
                         text: 'اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ',
                         translation: 'من قالها حين يصبح أدى شكر يومه',
                         repetition: 1,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 10,
+                        id: 11,
                         text: 'حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
                         translation: 'من قالها كفاه الله ما أهمه من أمر الدنيا والآخرة',
                         repetition: 7,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 11,
+                        id: 12,
                         text: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
                         translation: 'من قالها لم يضره شيء',
                         repetition: 3,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 12,
+                        id: 13,
                         text: 'رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ نَبِيًّا',
-                        translation: 'من قالها حين يصبح وحين يمسي كان حقاً على الله أن يرضيه',
+                        translation: 'من قالها حين يصبح كان حقاً على الله أن يرضيه',
                         repetition: 3,
                         reference: 'الترمذي'
                     },
                     {
-                        id: 13,
+                        id: 14,
                         text: 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ',
                         translation: 'دعاء لإصلاح الأحوال',
                         repetition: 3,
                         reference: 'الحاكم'
                     },
                     {
-                        id: 14,
-                        text: 'أَصْبَحْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ، وَعَلَىٰ كَلِمَةِ الْإِخْلَاصِ، وَعَلَىٰ دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَىٰ مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ',
-                        translation: 'ذكر الفطرة',
-                        repetition: 1,
-                        reference: 'أحمد'
-                    },
-                    {
                         id: 15,
                         text: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
-                        translation: 'من قالها مائة مرة حين يصبح غفرت ذنوبه وإن كانت مثل زبد البحر',
+                        translation: 'من قالها مائة مرة حين يصبح غفرت ذنوبه',
                         repetition: 100,
                         reference: 'البخاري ومسلم'
                     }
@@ -1395,735 +1271,108 @@
                 azkar: [
                     {
                         id: 1,
-                        text: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ',
+                        text: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ',
+                        translation: 'الاستعاذة بالله من الشيطان الرجيم',
+                        repetition: 1,
+                        reference: 'مقدمة التلاوة'
+                    },
+                    {
+                        id: 2,
+                        text: 'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ',
                         translation: 'آية الكرسي - من قالها حين يمسي أجير من الجن حتى يصبح',
                         repetition: 1,
                         reference: 'البقرة: 255'
                     },
                     {
-                        id: 2,
-                        text: 'أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
+                        id: 3,
+                        text: 'أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا',
                         translation: 'من قالها حين يمسي أدى شكر ليلته',
                         repetition: 1,
                         reference: 'مسلم'
                     },
                     {
-                        id: 3,
+                        id: 4,
                         text: 'اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ',
                         translation: 'دعاء المساء',
                         repetition: 1,
                         reference: 'الترمذي'
                     },
                     {
-                        id: 4,
+                        id: 5,
                         text: 'اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ',
-                        translation: 'من قالها موقناً بها حين يمسي فمات من ليلته دخل الجنة',
+                        translation: 'من قالها موقناً بها حين يمسي دخل الجنة',
                         repetition: 1,
                         reference: 'البخاري'
                     },
                     {
-                        id: 5,
-                        text: 'اللَّهُمَّ إِنِّي أَمْسَيْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ',
-                        translation: 'من قالها أعتقه الله من النار',
-                        repetition: 4,
-                        reference: 'أبو داود'
-                    },
-                    {
                         id: 6,
-                        text: 'اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ',
-                        translation: 'من قالها حين يمسي أدى شكر ليلته',
-                        repetition: 1,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 7,
                         text: 'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ',
                         translation: 'دعاء العافية',
                         repetition: 3,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 8,
+                        id: 7,
                         text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ',
                         translation: 'دعاء للوقاية من الهموم',
                         repetition: 1,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 9,
+                        id: 8,
                         text: 'اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ',
                         translation: 'دعاء المساء المبارك',
                         repetition: 1,
                         reference: 'الترمذي'
                     },
                     {
-                        id: 10,
+                        id: 9,
                         text: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
-                        translation: 'من قالها مائة مرة حين يمسي غفرت ذنوبه وإن كانت مثل زبد البحر',
+                        translation: 'من قالها مائة مرة حين يمسي غفرت ذنوبه',
                         repetition: 100,
                         reference: 'البخاري ومسلم'
                     },
                     {
-                        id: 11,
+                        id: 10,
                         text: 'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ',
-                        translation: 'من قالها عشر مرات حين يمسي كان كمن أعتق أربعة أنفس من ولد إسماعيل',
+                        translation: 'من قالها عشر مرات حين يمسي كان كمن أعتق أربعة أنفس',
                         repetition: 10,
                         reference: 'مسلم'
                     },
                     {
-                        id: 12,
-                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
+                        id: 11,
+                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي',
                         translation: 'دعاء شامل للعفو والعافية',
                         repetition: 1,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 13,
-                        text: 'اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ',
-                        translation: 'دعاء للوقاية من شر النفس والشيطان',
-                        repetition: 1,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 14,
+                        id: 12,
                         text: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
                         translation: 'من قالها لم يضره شيء',
                         repetition: 3,
                         reference: 'أبو داود'
                     },
                     {
-                        id: 15,
+                        id: 13,
                         text: 'رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ نَبِيًّا',
                         translation: 'من قالها حين يمسي كان حقاً على الله أن يرضيه',
                         repetition: 3,
                         reference: 'الترمذي'
-                    }
-                ]
-            },
-            
-            'sleep': {
-                title: 'أذكار النوم والاستيقاظ',
-                subtitle: 'الأذكار والأدعية المأثورة قبل النوم وعند الاستيقاظ',
-                timeGradient: 'var(--night-gradient)',
-                azkar: [
-                    {
-                        id: 1,
-                        text: 'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ',
-                        translation: 'دعاء النوم',
-                        repetition: 1,
-                        reference: 'البخاري ومسلم'
-                    },
-                    {
-                        id: 2,
-                        text: 'اللَّهُمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا، لَكَ مَمَاتُهَا وَمَحْيَاهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ',
-                        translation: 'دعاء النوم',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 3,
-                        text: 'اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ',
-                        translation: 'دعاء النوم',
-                        repetition: 3,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 4,
-                        text: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا',
-                        translation: 'دعاء النوم',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 5,
-                        text: 'الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا، وَكَفَانَا وَآوَانَا، فَكَمْ مِمَّنْ لَا كَافِيَ لَهُ وَلَا مُؤْوِي',
-                        translation: 'دعاء النوم بعد الأكل والشرب',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 6,
-                        text: 'اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ',
-                        translation: 'دعاء النوم',
-                        repetition: 1,
-                        reference: 'البخاري ومسلم'
-                    },
-                    {
-                        id: 7,
-                        text: 'سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ',
-                        translation: 'من قالها قبل النوم كفرت بهن خطاياه وإن كانت مثل زبد البحر',
-                        repetition: 33,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 8,
-                        text: 'الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لِي بِذِكْرِهِ',
-                        translation: 'دعاء الاستيقاظ من النوم',
-                        repetition: 1,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 9,
-                        text: 'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
-                        translation: 'من قالها حين يصبح وحين يمسي كفته من كل شيء',
-                        repetition: 1,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 10,
-                        text: 'اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ لَكَ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ نُورُ السَّمَاوَاتِ وَالْأَرْضِ، وَلَكَ الْحَمْدُ أَنْتَ مَلِكُ السَّمَاوَاتِ وَالْأَرْضِ، وَلَكَ الْحَمْدُ أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَلِقَاؤُكَ حَقٌّ، وَقَوْلُكَ حَقٌّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالنَّبِيُّونَ حَقٌّ، وَمُحَمَّدٌ حَقٌّ، وَالسَّاعَةُ حَقٌّ، اللَّهُمَّ لَكَ أَسْلَمْتُ، وَبِكَ آمَنْتُ، وَعَلَيْكَ تَوَكَّلْتُ، وَإِلَيْكَ أَنَبْتُ، وَبِكَ خَاصَمْتُ، وَإِلَيْكَ حَاكَمْتُ، فَاغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ، وَلَا إِلَٰهَ غَيْرُكَ',
-                        translation: 'دعاء الاستيقاظ الطويل',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    }
-                ]
-            },
-            
-            'prayer': {
-                title: 'أذكار الصلاة',
-                subtitle: 'أذكار ما قبل الصلاة وبعدها وأدعية السجود والركوع',
-                timeGradient: 'var(--prayer-gradient)',
-                azkar: [
-                    {
-                        id: 1,
-                        text: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلَا إِلَٰهَ غَيْرُكَ',
-                        translation: 'دعاء الاستفتاح',
-                        repetition: 1,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 2,
-                        text: 'اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا',
-                        translation: 'دعاء الاستفتاح',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 3,
-                        text: 'سُبْحَانَ رَبِّيَ الْعَظِيمِ',
-                        translation: 'تسبيح الركوع',
-                        repetition: 3,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 4,
-                        text: 'سُبْحَانَ رَبِّيَ الْأَعْلَى',
-                        translation: 'تسبيح السجود',
-                        repetition: 3,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 5,
-                        text: 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ',
-                        translation: 'قول المصلي عند الرفع من الركوع',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 6,
-                        text: 'رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي',
-                        translation: 'الدعاء بين السجدتين',
-                        repetition: 1,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 7,
-                        text: 'اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ',
-                        translation: 'دعاء السجود',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 8,
-                        text: 'سُبُّوحٌ قُدُّوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
-                        translation: 'دعاء السجود',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 9,
-                        text: 'اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ',
-                        translation: 'دعاء السجود',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 10,
-                        text: 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَفِي الْآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ',
-                        translation: 'الدعاء بعد التشهد الأخير',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 11,
-                        text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ',
-                        translation: 'الدعاء بعد التشهد',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 12,
-                        text: 'سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ',
-                        translation: 'أذكار بعد الصلاة (التسبيح والتحميد والتهليل والتكبير)',
-                        repetition: 33,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 13,
-                        text: 'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ',
-                        translation: 'من قالها بعد كل صلاة غفرت ذنوبه وإن كانت مثل زبد البحر',
-                        repetition: 10,
-                        reference: 'مسلم'
                     },
                     {
                         id: 14,
-                        text: 'اللَّهُمَّ أَعِنِّي عَلَىٰ ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ',
-                        translation: 'دعاء بعد السلام من الصلاة',
+                        text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا، إِنَّ رَبِّي عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ',
+                        translation: 'دعاء للوقاية من كل شر',
                         repetition: 1,
-                        reference: 'أبو داود'
+                        reference: 'الترمذي'
                     },
                     {
                         id: 15,
-                        text: 'اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ',
-                        translation: 'دعاء الاستغفار بعد الصلاة',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 16,
-                        text: 'اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ',
-                        translation: 'دعاء بعد الصلاة',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 17,
-                        text: 'أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ',
-                        translation: 'استغفار بعد الصلاة',
-                        repetition: 3,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 18,
-                        text: 'لَا إِلَٰهَ إِلَّا اللَّهُ، مُحَمَّدٌ رَسُولُ اللَّهِ، صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ',
-                        translation: 'الصلاة على النبي بعد الصلاة',
-                        repetition: 10,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 19,
-                        text: 'اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ',
-                        translation: 'دعاء بعد الانصراف من الصلاة',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 20,
-                        text: 'سُبْحَانَ اللَّهِ ٣٣ مَرَّةً، الْحَمْدُ لِلَّهِ ٣٣ مَرَّةً، اللَّهُ أَكْبَرُ ٣٣ مَرَّةً، ثُمَّ يُتِمُّ الْمِائَةَ بِـ لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ',
-                        translation: 'أذكار بعد الصلاة المشهورة',
-                        repetition: 100,
-                        reference: 'مسلم'
-                    }
-                ]
-            },
-            
-            'daily': {
-                title: 'أذكار اليوم والليلة',
-                subtitle: 'الأذكار اليومية المتنوعة والأدعية في مختلف الأوقات',
-                timeGradient: 'var(--hero-gradient)',
-                azkar: [
-                    {
-                        id: 1,
-                        text: 'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ',
-                        translation: 'من قالها في يوم مائة مرة كانت له عدل عشر رقاب، وكتبت له مائة حسنة، ومحيت عنه مائة سيئة، وكانت له حرزاً من الشيطان يومه ذلك حتى يمسي',
-                        repetition: 100,
-                        reference: 'البخاري ومسلم'
-                    },
-                    {
-                        id: 2,
-                        text: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
-                        translation: 'من قالها في يوم مائة مرة حطت خطاياه وإن كانت مثل زبد البحر',
-                        repetition: 100,
-                        reference: 'البخاري ومسلم'
-                    },
-                    {
-                        id: 3,
-                        text: 'أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ',
-                        translation: 'استغفار',
-                        repetition: 100,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 4,
-                        text: 'اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ',
-                        translation: 'الصلاة على النبي ﷺ',
-                        repetition: 10,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 5,
-                        text: 'سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
-                        translation: 'الكلمات الأربع التي هن أحب إلى الله مما طلعت عليه الشمس',
-                        repetition: 10,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 6,
-                        text: 'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
-                        translation: 'كنز من كنوز الجنة',
-                        repetition: 100,
-                        reference: 'البخاري ومسلم'
-                    },
-                    {
-                        id: 7,
-                        text: 'اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ',
-                        translation: 'من قالها موقناً بها حين يمسي، فمات من ليلته دخل الجنة، وكذلك إذا أصبح',
-                        repetition: 1,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 8,
-                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
-                        translation: 'دعاء العفو والعافية',
-                        repetition: 1,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 9,
-                        text: 'اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ',
-                        translation: 'دعاء للوقاية من شر النفس والشيطان',
-                        repetition: 1,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 10,
-                        text: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
-                        translation: 'من قالها ثلاثاً حين يصبح وثلاثاً حين يمسي لم يضره شيء',
-                        repetition: 3,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 11,
-                        text: 'رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ نَبِيًّا',
-                        translation: 'من قالها ثلاثاً حين يصبح وثلاثاً حين يمسي كان حقاً على الله أن يرضيه يوم القيامة',
-                        repetition: 3,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 12,
-                        text: 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ',
-                        translation: 'دعاء لإصلاح الأحوال',
-                        repetition: 3,
-                        reference: 'الحاكم'
-                    },
-                    {
-                        id: 13,
-                        text: 'أَصْبَحْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ، وَعَلَىٰ كَلِمَةِ الْإِخْلَاصِ، وَعَلَىٰ دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَىٰ مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ',
-                        translation: 'ذكر الفطرة',
-                        repetition: 1,
-                        reference: 'أحمد'
-                    },
-                    {
-                        id: 14,
-                        text: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ',
-                        translation: 'تسبيح عظيم الأجر',
-                        repetition: 3,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 15,
-                        text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
-                        translation: 'دعاء للوقاية من الهموم والمشاكل',
-                        repetition: 3,
-                        reference: 'البخاري'
-                    },
-                    {
-                        id: 16,
                         text: 'حَسْبِيَ اللَّهُ وَنِعْمَ الْوَكِيلُ',
-                        translation: 'من قالها حين يصبح وحين يمسي سبع مرات كفاه الله ما أهمه',
+                        translation: 'من قالها حين يمسي سبع مرات كفاه الله ما أهمه',
                         repetition: 7,
                         reference: 'أبو داود'
-                    },
-                    {
-                        id: 17,
-                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ فِعْلَ الْخَيْرَاتِ، وَتَرْكَ الْمُنْكَرَاتِ، وَحُبَّ الْمَسَاكِينِ، وَأَنْ تَغْفِرَ لِي وَتَرْحَمَنِي، وَإِذَا أَرَدْتَ فِتْنَةَ قَوْمٍ فَتَوَفَّنِي غَيْرَ مَفْتُونٍ',
-                        translation: 'دعاء شامل للخير والصلاح',
-                        repetition: 1,
-                        reference: 'الترمذي'
-                    },
-                    {
-                        id: 18,
-                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنَ الْخَيْرِ كُلِّهِ عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، وَأَعُوذُ بِكَ مِنَ الشَّرِّ كُلِّهِ عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ',
-                        translation: 'دعاء شامل لكل خير ووقاية من كل شر',
-                        repetition: 1,
-                        reference: 'ابن ماجه'
-                    },
-                    {
-                        id: 19,
-                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ',
-                        translation: 'دعاء مختصر للجنة والوقاية من النار',
-                        repetition: 3,
-                        reference: 'أبو داود'
-                    },
-                    {
-                        id: 20,
-                        text: 'سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ',
-                        translation: 'من قالها في يوم مائة مرة جاء يوم القيامة وإن كانت خطاياه مثل زبد البحر',
-                        repetition: 100,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 21,
-                        text: 'اللَّهُمَّ أَصْلِحْ لِي دِينِي الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي، وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ، وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ',
-                        translation: 'دعاء لإصلاح الدين والدنيا والآخرة',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 22,
-                        text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ',
-                        translation: 'دعاء للمحافظة على النعمة والعافية',
-                        repetition: 1,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 23,
-                        text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى',
-                        translation: 'دعاء للهداية والتقى والعفاف والغنى',
-                        repetition: 3,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 24,
-                        text: 'اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَعَافِنِي، وَارْزُقْنِي',
-                        translation: 'دعاء جامع للخير',
-                        repetition: 3,
-                        reference: 'مسلم'
-                    },
-                    {
-                        id: 25,
-                        text: 'لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',
-                        translation: 'دعاء ذي النون الذي لا يدعو به مسلم في شيء إلا استجاب الله له',
-                        repetition: 1,
-                        reference: 'الترمذي'
-                    }
-                ]
-            },
-            
-            'quranic': {
-                title: 'أدعية قرآنية',
-                subtitle: 'أدعية الأنبياء والمرسلين المذكورة في القرآن الكريم',
-                timeGradient: 'linear-gradient(135deg, #8b5a2b 0%, #d4af37 100%)',
-                azkar: [
-                    {
-                        id: 1,
-                        text: 'رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ',
-                        translation: 'دعاء إبراهيم وإسماعيل عليهما السلام عند بناء الكعبة',
-                        repetition: 1,
-                        reference: 'البقرة: 127'
-                    },
-                    {
-                        id: 2,
-                        text: 'رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا ۖ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ',
-                        translation: 'دعاء إبراهيم عليه السلام',
-                        repetition: 1,
-                        reference: 'البقرة: 128'
-                    },
-                    {
-                        id: 3,
-                        text: 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'البقرة: 201'
-                    },
-                    {
-                        id: 4,
-                        text: 'رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'البقرة: 286'
-                    },
-                    {
-                        id: 5,
-                        text: 'رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ',
-                        translation: 'دعاء إبراهيم عليه السلام',
-                        repetition: 1,
-                        reference: 'الصافات: 100'
-                    },
-                    {
-                        id: 6,
-                        text: 'رَبِّ هَبْ لِي حُكْمًا وَأَلْحِقْنِي بِالصَّالِحِينَ',
-                        translation: 'دعاء يوسف عليه السلام',
-                        repetition: 1,
-                        reference: 'الشعراء: 83'
-                    },
-                    {
-                        id: 7,
-                        text: 'رَبِّ اشْرَحْ لِي صَدْرِي، وَيَسِّرْ لِي أَمْرِي، وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي، يَفْقَهُوا قَوْلِي',
-                        translation: 'دعاء موسى عليه السلام',
-                        repetition: 1,
-                        reference: 'طه: 25-28'
-                    },
-                    {
-                        id: 8,
-                        text: 'رَبِّ زِدْنِي عِلْمًا',
-                        translation: 'دعاء موسى عليه السلام',
-                        repetition: 1,
-                        reference: 'طه: 114'
-                    },
-                    {
-                        id: 9,
-                        text: 'رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ، وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'المؤمنون: 97-98'
-                    },
-                    {
-                        id: 10,
-                        text: 'رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'المؤمنون: 109'
-                    },
-                    {
-                        id: 11,
-                        text: 'رَّبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَلْ لِّي مِن لَّدُنكَ سُلْطَانًا نَّصِيرًا',
-                        translation: 'دعاء الإخلاص',
-                        repetition: 1,
-                        reference: 'الإسراء: 80'
-                    },
-                    {
-                        id: 12,
-                        text: 'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',
-                        translation: 'دعاء المؤمنين في القتال',
-                        repetition: 1,
-                        reference: 'البقرة: 250'
-                    },
-                    {
-                        id: 13,
-                        text: 'رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ',
-                        translation: 'دعاء إبراهيم عليه السلام',
-                        repetition: 1,
-                        reference: 'إبراهيم: 40'
-                    },
-                    {
-                        id: 14,
-                        text: 'رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ',
-                        translation: 'دعاء إبراهيم عليه السلام',
-                        repetition: 1,
-                        reference: 'إبراهيم: 41'
-                    },
-                    {
-                        id: 15,
-                        text: 'رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'آل عمران: 16'
-                    },
-                    {
-                        id: 16,
-                        text: 'رَبَّنَا مَا خَلَقْتَ هَٰذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'آل عمران: 191'
-                    },
-                    {
-                        id: 17,
-                        text: 'رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ ۖ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'آل عمران: 192'
-                    },
-                    {
-                        id: 18,
-                        text: 'رَّبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلْإِيمَانِ أَنْ آمِنُوا بِرَبِّكُمْ فَآمَنَّا ۚ رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'آل عمران: 193'
-                    },
-                    {
-                        id: 19,
-                        text: 'رَبَّنَا وَآتِنَا مَا وَعَدْتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ ۗ إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'آل عمران: 194'
-                    },
-                    {
-                        id: 20,
-                        text: 'رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي',
-                        translation: 'دعاء موسى عليه السلام',
-                        repetition: 1,
-                        reference: 'القصص: 16'
-                    },
-                    {
-                        id: 21,
-                        text: 'رَبِّ نَجِّنِي مِنَ الْقَوْمِ الظَّالِمِينَ',
-                        translation: 'دعاء موسى عليه السلام',
-                        repetition: 1,
-                        reference: 'القصص: 21'
-                    },
-                    {
-                        id: 22,
-                        text: 'رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ',
-                        translation: 'دعاء موسى عليه السلام',
-                        repetition: 1,
-                        reference: 'القصص: 24'
-                    },
-                    {
-                        id: 23,
-                        text: 'رَبِّ اشْرَحْ لِي صَدْرِي',
-                        translation: 'دعاء موسى عليه السلام',
-                        repetition: 1,
-                        reference: 'طه: 25'
-                    },
-                    {
-                        id: 24,
-                        text: 'رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'الممتحنة: 4'
-                    },
-                    {
-                        id: 25,
-                        text: 'رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِّلَّذِينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَا ۖ إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'الممتحنة: 5'
-                    },
-                    {
-                        id: 26,
-                        text: 'رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ',
-                        translation: 'دعاء المؤمنين',
-                        repetition: 1,
-                        reference: 'التحريم: 8'
-                    },
-                    {
-                        id: 27,
-                        text: 'رَبِّ هَبْ لِي مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ',
-                        translation: 'دعاء زكريا عليه السلام',
-                        repetition: 1,
-                        reference: 'آل عمران: 38'
-                    },
-                    {
-                        id: 28,
-                        text: 'رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ',
-                        translation: 'دعاء زكريا عليه السلام',
-                        repetition: 1,
-                        reference: 'الأنبياء: 89'
-                    },
-                    {
-                        id: 29,
-                        text: 'رَبِّ إِنِّي وَهَنَ الْعَظْمُ مِنِّي وَاشْتَعَلَ الرَّأْسُ شَيْبًا وَلَمْ أَكُن بِدُعَائِكَ رَبِّ شَقِيًّا',
-                        translation: 'دعاء زكريا عليه السلام',
-                        repetition: 1,
-                        reference: 'مريم: 4'
-                    },
-                    {
-                        id: 30,
-                        text: 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ',
-                        translation: 'دعاء سليمان عليه السلام',
-                        repetition: 1,
-                        reference: 'النمل: 19'
                     }
                 ]
             }
@@ -2236,15 +1485,14 @@
             const detailPage = document.getElementById(`${sectionId}-detail`);
             detailPage.style.display = 'block';
             
-            // إضافة محتوى الصفحة مع عداد لكل ذكر
             const container = detailPage.querySelector('.container');
             const azkarHTML = generateAzkarHTML(data);
             container.innerHTML = azkarHTML;
             
-            // إضافة عدادات لكل ذكر
+            // إضافة عدادات بعد تحميل المحتوى
             setTimeout(() => {
                 document.querySelectorAll('.zekr-card').forEach(card => {
-                    const zekrId = card.dataset.id;
+                    const zekrId = `${sectionId}-${card.dataset.id}`;
                     const repetition = parseInt(card.dataset.repetition);
                     setupCounter(card, zekrId, repetition);
                 });
@@ -2263,47 +1511,6 @@
                 
                 <div class="detail-content">
                     <div class="detail-section">
-                        <h3>الأذكار المباركة</h3>
-                        <div class="azkar-grid">
-            `;
-            
-            data.azkar.forEach(zekr => {
-                html += `
-                    <div class="zekr-card" data-id="${zekr.id}" data-repetition="${zekr.repetition}">
-                        <div class="tape-decoration">${zekr.repetition} مرة</div>
-                        <h4>الذكر ${zekr.id}</h4>
-                        <div class="zekr-text">${zekr.text.replace(/\n/g, '<br>')}</div>
-                        <div class="zekr-translation">${zekr.translation}</div>
-                        <div class="zekr-info">
-                            <span class="zekr-tag">${zekr.repetition} مرة</span>
-                            <span class="zekr-tag">${zekr.reference}</span>
-                        </div>
-                        
-                        <div class="repetition-counter">
-                            <button class="counter-btn minus" data-id="${zekr.id}">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <div>
-                                <div class="counter-number" id="counter-${zekr.id}">0</div>
-                                <div class="counter-label">من ${zekr.repetition}</div>
-                            </div>
-                            <button class="counter-btn plus" data-id="${zekr.id}">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                            <button class="counter-btn reset" data-id="${zekr.id}" style="background-color: var(--accent-color);">
-                                <i class="fas fa-redo"></i>
-                            </button>
-                        </div>
-                    </div>
-                `;
-            });
-            
-            html += `
-                        </div>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>إحصائيات القسم</h3>
                         <div class="stats-container">
                             <div class="stat-card">
                                 <div class="stat-number">${data.azkar.length}</div>
@@ -2313,33 +1520,54 @@
                                 <div class="stat-number">${calculateTotalRepetitions(data.azkar)}</div>
                                 <div class="stat-label">مجموع التكرار</div>
                             </div>
-                            <div class="stat-card">
-                                <div class="stat-number">${getTodayDate()}</div>
-                                <div class="stat-label">التاريخ الهجري</div>
-                            </div>
                         </div>
                     </div>
                     
                     <div class="detail-section">
-                        <div class="islamic-day">
-                            <h4>اليوم الإسلامي</h4>
-                            <p>فرصة عظيمة لتكثير الحسنات بالأذكار</p>
-                            <div class="day-info">
-                                <div class="day-item">
-                                    <h5>ساعات الذكر المتبقية</h5>
-                                    <p id="remainingHours">--</p>
-                                </div>
-                                <div class="day-item">
-                                    <h5>الوقت المثالي للذكر</h5>
-                                    <p>بعد الصلوات</p>
-                                </div>
+                        <h3>الأذكار المباركة</h3>
+                        <div class="azkar-grid">
+            `;
+            
+            data.azkar.forEach((zekr, index) => {
+                const isLong = zekr.text.length > 150;
+                html += `
+                    <div class="zekr-card ${isLong ? 'long-zekr' : ''}" data-id="${zekr.id}" data-repetition="${zekr.repetition}">
+                        <div class="zekr-number">${index + 1}</div>
+                        <div class="zekr-text">${zekr.text.replace(/\n/g, '<br>')}</div>
+                        <div class="zekr-translation">${zekr.translation}</div>
+                        
+                        <div class="repetition-counter">
+                            <button class="counter-btn minus" data-id="${zekr.id}">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <div class="counter-display">
+                                <div class="counter-number" id="counter-${zekr.id}">0</div>
+                                <div class="counter-total">من ${zekr.repetition}</div>
                             </div>
+                            <button class="counter-btn plus" data-id="${zekr.id}">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="counter-btn reset" data-id="${zekr.id}">
+                                <i class="fas fa-redo"></i> إعادة
+                            </button>
+                        </div>
+                        
+                        <div class="zekr-info">
+                            <span class="zekr-reference">${zekr.reference}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += `
                         </div>
                     </div>
                     
-                    <a href="#sections" class="back-link">
-                        <i class="fas fa-arrow-right"></i> العودة إلى أقسام الأذكار
-                    </a>
+                    <div class="detail-section" style="text-align: center;">
+                        <a href="#sections" class="back-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 25px; background: var(--primary-color); color: white; border-radius: var(--border-radius); text-decoration: none; font-weight: 600; transition: var(--transition);">
+                            <i class="fas fa-arrow-right"></i> العودة إلى أقسام الأذكار
+                        </a>
+                    </div>
                 </div>
             `;
             
@@ -2350,69 +1578,62 @@
             return azkar.reduce((total, zekr) => total + zekr.repetition, 0);
         }
         
-        function getTodayDate() {
-            const hijriMonths = ['محرم', 'صفر', 'ربيع الأول', 'ربيع الثاني', 'جمادى الأولى', 'جمادى الآخرة', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذو القعدة', 'ذو الحجة'];
-            const today = new Date();
-            const randomDay = Math.floor(Math.random() * 28) + 1;
-            const randomMonth = hijriMonths[Math.floor(Math.random() * 12)];
-            const randomYear = 1445 + Math.floor(Math.random() * 2);
-            
-            return `${randomDay} ${randomMonth} ${randomYear} هـ`;
-        }
-        
         function setupCounter(card, zekrId, maxCount) {
-            // تهيئة القيمة من التخزين المحلي أو الصفر
-            let currentCount = localStorage.getItem(`zekr-${zekrId}`) || 0;
-            currentCount = parseInt(currentCount);
+            // تهيئة القيمة من التخزين المحلي
+            let currentCount = parseInt(localStorage.getItem(`zekr-${zekrId}`)) || 0;
             
-            const counterElement = document.getElementById(`counter-${zekrId}`);
+            const counterElement = document.getElementById(`counter-${zekrId.split('-')[1]}`);
             counterElement.textContent = currentCount;
             
             // التحقق من الإكمال
-            if (currentCount >= maxCount) {
-                card.style.borderRightColor = '#28a745';
-                card.style.boxShadow = '0 0 15px rgba(40, 167, 69, 0.3)';
-            }
+            updateCardCompletion(card, currentCount, maxCount);
             
             // إضافة أحداث للأزرار
-            card.querySelector('.plus').addEventListener('click', function() {
+            const plusBtn = card.querySelector('.plus');
+            const minusBtn = card.querySelector('.minus');
+            const resetBtn = card.querySelector('.reset');
+            
+            plusBtn.addEventListener('click', function() {
                 if (currentCount < maxCount) {
                     currentCount++;
-                    updateCounter(zekrId, currentCount, maxCount, counterElement, card);
+                    updateCounterState(zekrId, currentCount, maxCount, counterElement, card);
                 }
             });
             
-            card.querySelector('.minus').addEventListener('click', function() {
+            minusBtn.addEventListener('click', function() {
                 if (currentCount > 0) {
                     currentCount--;
-                    updateCounter(zekrId, currentCount, maxCount, counterElement, card);
+                    updateCounterState(zekrId, currentCount, maxCount, counterElement, card);
                 }
             });
             
-            card.querySelector('.reset').addEventListener('click', function() {
+            resetBtn.addEventListener('click', function() {
                 currentCount = 0;
-                updateCounter(zekrId, currentCount, maxCount, counterElement, card);
-                card.style.borderRightColor = '';
-                card.style.boxShadow = '';
+                updateCounterState(zekrId, currentCount, maxCount, counterElement, card);
             });
         }
         
-        function updateCounter(zekrId, count, maxCount, counterElement, card) {
+        function updateCounterState(zekrId, count, maxCount, counterElement, card) {
             counterElement.textContent = count;
             localStorage.setItem(`zekr-${zekrId}`, count);
             
-            // التحقق من الإكمال
+            // تأثير بصري عند التغيير
+            counterElement.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                counterElement.style.transform = 'scale(1)';
+            }, 200);
+            
+            // تحديث حالة الإكمال
+            updateCardCompletion(card, count, maxCount);
+        }
+        
+        function updateCardCompletion(card, count, maxCount) {
             if (count >= maxCount) {
+                card.classList.add('completed');
                 card.style.borderRightColor = '#28a745';
-                card.style.boxShadow = '0 0 15px rgba(40, 167, 69, 0.3)';
-                // إشعار بصري لطيف عند الإكمال
-                counterElement.style.transform = 'scale(1.2)';
-                setTimeout(() => {
-                    counterElement.style.transform = 'scale(1)';
-                }, 300);
             } else {
+                card.classList.remove('completed');
                 card.style.borderRightColor = '';
-                card.style.boxShadow = '';
             }
         }
         
@@ -2430,9 +1651,11 @@
                 <div class="detail-content">
                     <p>هذا القسم قيد التطوير وسيتم إضافة المحتوى قريباً بإذن الله.</p>
                     
-                    <a href="#sections" class="back-link">
-                        <i class="fas fa-arrow-right"></i> العودة إلى أقسام الأذكار
-                    </a>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="#sections" class="back-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 25px; background: var(--primary-color); color: white; border-radius: var(--border-radius); text-decoration: none; font-weight: 600; transition: var(--transition);">
+                            <i class="fas fa-arrow-right"></i> العودة إلى أقسام الأذكار
+                        </a>
+                    </div>
                 </div>
             `;
             
