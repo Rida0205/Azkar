@@ -442,10 +442,11 @@
             background-color: #f8fff9;
         }
 
+        /* تصميم جديد لرقم الذكر - لا يغطي على النص */
         .zekr-number {
             position: absolute;
-            top: 15px;
-            left: 15px;
+            top: 10px;
+            left: 10px;
             background: var(--primary-color);
             color: white;
             width: 35px;
@@ -456,6 +457,8 @@
             justify-content: center;
             font-weight: bold;
             font-size: 1rem;
+            z-index: 1;
+            box-shadow: 0 3px 10px rgba(26, 95, 75, 0.3);
         }
 
         .zekr-text {
@@ -466,6 +469,7 @@
             text-align: right;
             padding: 0 10px;
             font-weight: 500;
+            padding-top: 5px; /* مساحة إضافية في الأعلى */
         }
 
         .zekr-translation {
@@ -478,6 +482,7 @@
             padding: 15px;
             border-radius: 8px;
             border-right: 3px solid var(--accent-light);
+            margin-top: 10px; /* مسافة من رقم الذكر */
         }
 
         .zekr-info {
@@ -768,6 +773,7 @@
             transition: var(--transition);
             border: none;
             cursor: pointer;
+            font-family: 'Cairo', 'Tajawal', sans-serif;
         }
 
         .back-link:hover {
@@ -870,6 +876,20 @@
             .zekr-text {
                 font-size: 1.15rem;
             }
+            
+            /* تحسين رقم الذكر للهواتف */
+            .zekr-number {
+                top: 8px;
+                left: 8px;
+                width: 30px;
+                height: 30px;
+                font-size: 0.9rem;
+            }
+            
+            .zekr-text {
+                padding-top: 0; /* إزالة المساحة الإضافية */
+                padding-right: 40px; /* مساحة لرقم الذكر */
+            }
         }
 
         @media (max-width: 576px) {
@@ -910,7 +930,14 @@
             
             .zekr-text {
                 font-size: 1.1rem;
-                padding: 0;
+                padding: 0 35px 0 0; /* مساحة أكبر لرقم الذكر */
+                line-height: 1.7;
+            }
+            
+            .zekr-translation {
+                font-size: 0.95rem;
+                padding: 12px;
+                margin-top: 8px;
             }
             
             .repetition-counter {
@@ -936,6 +963,8 @@
                 margin-top: 10px;
                 width: 100%;
                 border-radius: 10px;
+                font-size: 0.85rem;
+                padding: 0 12px;
             }
             
             .stats-container {
@@ -944,6 +973,15 @@
             
             .stat-number {
                 font-size: 1.8rem;
+            }
+            
+            /* تحسين إضافي لرقم الذكر على الهواتف الصغيرة */
+            .zekr-number {
+                top: 6px;
+                left: 6px;
+                width: 28px;
+                height: 28px;
+                font-size: 0.85rem;
             }
         }
 
@@ -956,6 +994,7 @@
             
             .repetition-counter {
                 flex-wrap: wrap;
+                gap: 8px;
             }
             
             .counter-btn {
@@ -974,6 +1013,52 @@
             
             .hero-title {
                 font-size: 1.5rem;
+            }
+            
+            /* تحسين نهائي لرقم الذكر على الهواتف الصغيرة جداً */
+            .zekr-number {
+                top: 5px;
+                left: 5px;
+                width: 26px;
+                height: 26px;
+                font-size: 0.8rem;
+                box-shadow: 0 2px 5px rgba(26, 95, 75, 0.3);
+            }
+            
+            .zekr-text {
+                padding-right: 30px; /* مسافة أقل لرقم الذكر */
+                font-size: 1.05rem;
+            }
+            
+            .zekr-card {
+                padding: 18px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .zekr-number {
+                width: 24px;
+                height: 24px;
+                font-size: 0.75rem;
+            }
+            
+            .zekr-text {
+                padding-right: 28px;
+                font-size: 1rem;
+            }
+            
+            .zekr-translation {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+            
+            .counter-btn {
+                width: 30px;
+                height: 30px;
+            }
+            
+            .counter-number {
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -1828,7 +1913,7 @@
                     },
                     {
                         id: 3,
-                        text: 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',
+                        text: 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنةً وَقِنَا عَذَابَ النَّارِ',
                         translation: 'دعاء المؤمنين',
                         repetition: 1,
                         reference: 'البقرة: 201'
