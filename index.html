@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>لوحة القيادة - econcours.ma</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,15 +37,14 @@
         .login-box {
             background: white;
             border-radius: 30px;
-            padding: 2.5rem 2rem;
+            padding: 2rem 1.5rem;
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
 
         .login-box .logo {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: #0f172a;
         }
@@ -56,46 +55,40 @@
 
         .login-box .hadith {
             color: #d97706;
-            font-size: 1rem;
-            margin: 1.5rem 0;
-            padding: 1rem;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            padding: 0.8rem;
             background: #fef3c7;
             border-radius: 15px;
-            line-height: 1.6;
         }
 
         .login-box h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
             color: #334155;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
         }
 
         .login-box input {
             width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.2rem;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
             border: 2px solid #e2e8f0;
-            border-radius: 15px;
-            font-size: 1.2rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
             text-align: center;
             letter-spacing: 4px;
         }
 
         .login-box button {
             width: 100%;
-            padding: 1rem;
+            padding: 0.8rem;
             background: #d97706;
             color: white;
             border: none;
-            border-radius: 15px;
-            font-size: 1.1rem;
+            border-radius: 12px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .login-box button:hover {
-            background: #b45309;
         }
 
         .error-message {
@@ -118,7 +111,7 @@
         /* Header */
         .main-header {
             background: white;
-            padding: 0.8rem 2rem;
+            padding: 0.8rem 1.5rem;
             border-bottom: 1px solid #e2e8f0;
             display: flex;
             justify-content: space-between;
@@ -129,17 +122,16 @@
             left: 0;
             right: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .header-logo {
             display: flex;
             align-items: center;
-            gap: 2rem;
+            gap: 1rem;
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #0f172a;
         }
@@ -150,11 +142,11 @@
 
         .admin-badge {
             background: #fef3c7;
-            padding: 0.5rem 1.2rem;
+            padding: 0.4rem 1rem;
             border-radius: 40px;
             color: #d97706;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -163,15 +155,15 @@
         .header-info {
             display: flex;
             align-items: center;
-            gap: 2rem;
+            gap: 1rem;
         }
 
         .date-badge {
             background: #f1f5f9;
-            padding: 0.5rem 1.2rem;
+            padding: 0.4rem 1rem;
             border-radius: 40px;
             color: #475569;
-            font-size: 1rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -180,18 +172,11 @@
         .logout-btn {
             background: none;
             border: 1px solid #e2e8f0;
-            padding: 0.5rem 1.2rem;
+            padding: 0.4rem 1rem;
             border-radius: 8px;
             color: #64748b;
             cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s;
-        }
-
-        .logout-btn:hover {
-            background: #ef4444;
-            color: white;
-            border-color: #ef4444;
+            font-size: 0.9rem;
         }
 
         /* Main Content */
@@ -200,72 +185,68 @@
             height: calc(100vh - 70px);
             overflow-y: auto;
             padding: 1.5rem;
+            -webkit-overflow-scrolling: touch;
         }
 
+        /* ========== تصميم موحد للهاتف والحاسوب ========== */
+        
         /* KPI Cards */
         .kpi-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.2rem;
+            gap: 1rem;
             margin-bottom: 1.5rem;
         }
 
         .kpi-card {
             background: white;
-            border-radius: 20px;
-            padding: 1.5rem;
+            border-radius: 16px;
+            padding: 1.2rem;
             border: 1px solid #e2e8f0;
-            transition: all 0.3s;
-        }
-
-        .kpi-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.2);
-            border-color: #d97706;
         }
 
         .kpi-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .kpi-icon {
-            width: 48px;
-            height: 48px;
+            width: 40px;
+            height: 40px;
             background: #fef3c7;
-            border-radius: 16px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #d97706;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .kpi-value {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: #0f172a;
         }
 
         .kpi-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         /* Alerts Grid */
         .alerts-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.2rem;
+            gap: 1rem;
             margin-bottom: 1.5rem;
         }
 
         .alert-card {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            border-radius: 20px;
-            padding: 1.5rem;
+            border-radius: 16px;
+            padding: 1.2rem;
             color: white;
         }
 
@@ -273,34 +254,34 @@
             display: flex;
             align-items: center;
             gap: 0.8rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .alert-header i {
             color: #d97706;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .alert-header span {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #94a3b8;
         }
 
         .alert-value {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .alert-list {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: #cbd5e1;
-            max-height: 100px;
+            max-height: 80px;
             overflow-y: auto;
         }
 
         .alert-list div {
-            padding: 0.3rem 0;
+            padding: 0.2rem 0;
             border-bottom: 1px solid #334155;
         }
 
@@ -308,24 +289,24 @@
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.2rem;
+            gap: 1rem;
             margin-bottom: 1.5rem;
         }
 
         .stat-card {
             background: white;
-            border-radius: 16px;
-            padding: 1.2rem;
+            border-radius: 14px;
+            padding: 1rem;
             border: 1px solid #e2e8f0;
         }
 
         .stat-title {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
             gap: 0.3rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         .stat-title i {
@@ -339,15 +320,15 @@
         }
 
         .stat-number {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #0f172a;
         }
 
         .stat-name {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: #64748b;
-            max-width: 150px;
+            max-width: 120px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -357,28 +338,24 @@
         .birthday-alert {
             background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
             border-radius: 16px;
-            padding: 1.2rem 1.5rem;
+            padding: 1rem 1.2rem;
             margin-bottom: 1.5rem;
             color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
         }
 
         .birthday-header {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
         }
 
         .birthday-header i {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .birthday-header span {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
         }
 
@@ -390,13 +367,12 @@
 
         .birthday-item {
             background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 1rem;
             border-radius: 40px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            backdrop-filter: blur(5px);
         }
 
         /* Filter Section */
@@ -413,7 +389,7 @@
             align-items: center;
             gap: 0.5rem;
             margin-bottom: 1rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #0f172a;
         }
@@ -424,17 +400,17 @@
 
         .filter-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 1rem;
         }
 
         .filter-item select, .filter-item input {
             width: 100%;
-            padding: 0.8rem;
+            padding: 0.7rem;
             border: 1px solid #e2e8f0;
-            border-radius: 10px;
+            border-radius: 8px;
             font-family: 'Cairo', sans-serif;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .filter-actions {
@@ -444,10 +420,10 @@
         }
 
         .filter-actions button {
-            padding: 0.8rem 1.5rem;
+            padding: 0.7rem 1.5rem;
             border: none;
-            border-radius: 10px;
-            font-size: 0.95rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
             cursor: pointer;
             font-weight: 500;
         }
@@ -478,7 +454,7 @@
         }
 
         .table-header h3 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -491,30 +467,30 @@
 
         .results-count {
             color: #64748b;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .table-wrapper {
             overflow-x: auto;
-            max-height: 400px;
+            max-height: 350px;
             overflow-y: auto;
             border: 1px solid #f1f5f9;
-            border-radius: 12px;
+            border-radius: 10px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 1000px;
-            font-size: 0.95rem;
+            min-width: 900px;
+            font-size: 0.9rem;
         }
 
         th {
             text-align: right;
-            padding: 1rem;
+            padding: 0.8rem;
             color: #64748b;
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             border-bottom: 2px solid #e2e8f0;
             background: #f8fafc;
             position: sticky;
@@ -522,19 +498,15 @@
         }
 
         td {
-            padding: 1rem;
+            padding: 0.8rem;
             border-bottom: 1px solid #f1f5f9;
             color: #334155;
         }
 
-        tr:hover {
-            background: #f8fafc;
-        }
-
         .badge {
-            padding: 0.3rem 0.8rem;
+            padding: 0.2rem 0.6rem;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
             display: inline-block;
         }
@@ -557,18 +529,11 @@
         .btn-details {
             background: none;
             border: 1px solid #e2e8f0;
-            padding: 0.4rem 0.8rem;
+            padding: 0.3rem 0.7rem;
             border-radius: 6px;
             color: #64748b;
             cursor: pointer;
-            font-size: 0.8rem;
-            transition: all 0.3s;
-        }
-
-        .btn-details:hover {
-            background: #d97706;
-            color: white;
-            border-color: #d97706;
+            font-size: 0.75rem;
         }
 
         /* Modal */
@@ -584,7 +549,6 @@
             align-items: center;
             justify-content: center;
             padding: 1rem;
-            backdrop-filter: blur(5px);
         }
 
         .modal.active {
@@ -593,12 +557,12 @@
 
         .modal-content {
             background: white;
-            border-radius: 24px;
+            border-radius: 20px;
             width: 90%;
-            max-width: 600px;
+            max-width: 500px;
             max-height: 80vh;
             overflow-y: auto;
-            padding: 2rem;
+            padding: 1.5rem;
             position: relative;
         }
 
@@ -615,18 +579,18 @@
 
         .modal-header {
             text-align: center;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #f1f5f9;
         }
 
         .modal-header h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #0f172a;
         }
 
         .modal-header p {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #64748b;
         }
 
@@ -638,22 +602,22 @@
 
         .info-item {
             border-bottom: 1px solid #f1f5f9;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.4rem;
         }
 
         .info-label {
             color: #64748b;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             margin-bottom: 0.2rem;
         }
 
         .info-value {
             color: #0f172a;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
-        /* Responsive - للهاتف فقط */
+        /* ========== تحسينات الهاتف فقط ========== */
         @media (max-width: 768px) {
             .main-header {
                 padding: 0.5rem 1rem;
@@ -670,7 +634,7 @@
 
             .admin-badge {
                 padding: 0.2rem 0.6rem;
-                font-size: 0.7rem;
+                font-size: 0.75rem;
             }
 
             .admin-badge span {
@@ -720,7 +684,7 @@
             }
 
             .kpi-value {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
             .kpi-label {
@@ -750,7 +714,7 @@
 
             .alert-list {
                 font-size: 0.7rem;
-                max-height: 80px;
+                max-height: 60px;
             }
 
             .stats-grid {
@@ -759,7 +723,7 @@
             }
 
             .stat-card {
-                padding: 0.8rem;
+                padding: 0.7rem;
             }
 
             .stat-title {
@@ -771,7 +735,7 @@
             }
 
             .stat-name {
-                font-size: 0.6rem;
+                font-size: 0.65rem;
                 max-width: 80px;
             }
 
@@ -784,11 +748,11 @@
             }
 
             .birthday-header span {
-                font-size: 0.8rem;
+                font-size: 0.85rem;
             }
 
             .birthday-item {
-                padding: 0.2rem 0.6rem;
+                padding: 0.3rem 0.8rem;
                 font-size: 0.7rem;
             }
 
@@ -835,7 +799,7 @@
 
             table {
                 min-width: 650px;
-                font-size: 0.7rem;
+                font-size: 0.75rem;
             }
 
             th {
@@ -992,13 +956,13 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>الاسم بالعربية</th>
-                                <th>الاسم بالفرنسية</th>
-                                <th>تاريخ الميلاد</th>
+                                <th>الاسم</th>
+                                <th>الفرنسية</th>
+                                <th>الميلاد</th>
                                 <th>المدينة</th>
                                 <th>الخدمة</th>
-                                <th>تاريخ التسجيل</th>
-                                <th>الواتساب</th>
+                                <th>التسجيل</th>
+                                <th>واتساب</th>
                                 <th></th>
                             </tr>
                         </thead>
