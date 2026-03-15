@@ -22,52 +22,148 @@
             background: #f0f2f5;
             height: 100vh;
             overflow: hidden;
-            transition: background 0.3s, color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        /* الوضع الليلي */
+        /* الوضع الليلي - ألوان متناسقة */
         body.dark-mode {
-            background: #1a1e2b;
+            background: #0f172a;
             color: #e2e8f0;
         }
 
         body.dark-mode .login-box {
-            background: #2d3748;
+            background: #1e293b;
             color: #e2e8f0;
+            border: 1px solid #334155;
         }
 
-        body.dark-mode .main-header,
+        body.dark-mode .login-box .hadith {
+            background: #2d3a4f;
+            color: #fbbf24;
+        }
+
+        body.dark-mode .main-header {
+            background: #1e293b;
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode .admin-badge {
+            background: #2d3a4f;
+            color: #fbbf24;
+        }
+
+        body.dark-mode .date-badge {
+            background: #2d3a4f;
+            color: #94a3b8;
+        }
+
+        body.dark-mode .theme-toggle {
+            background: #2d3a4f;
+            color: #fbbf24;
+        }
+
+        body.dark-mode .logout-btn {
+            border-color: #475569;
+            color: #94a3b8;
+        }
+
         body.dark-mode .kpi-card,
         body.dark-mode .stat-card,
         body.dark-mode .filter-section,
-        body.dark-mode .table-container,
-        body.dark-mode .modal-content {
-            background: #2d3748;
-            border-color: #4a5568;
-            color: #e2e8f0;
+        body.dark-mode .table-container {
+            background: #1e293b;
+            border-color: #334155;
         }
 
         body.dark-mode .kpi-value,
         body.dark-mode .stat-number,
-        body.dark-mode th,
-        body.dark-mode td {
-            color: #e2e8f0;
+        body.dark-mode .filter-title,
+        body.dark-mode .table-header h3 {
+            color: #f1f5f9;
         }
 
-        body.dark-mode .table-wrapper {
-            border-color: #4a5568;
+        body.dark-mode .kpi-label,
+        body.dark-mode .stat-title,
+        body.dark-mode .results-count {
+            color: #94a3b8;
         }
 
-        body.dark-mode th {
-            background: #1e2533;
-            color: #a0aec0;
+        body.dark-mode .kpi-icon {
+            background: #2d3a4f;
+            color: #fbbf24;
         }
 
         body.dark-mode .filter-item select,
         body.dark-mode .filter-item input {
-            background: #1e2533;
-            border-color: #4a5568;
+            background: #0f172a;
+            border-color: #334155;
             color: #e2e8f0;
+        }
+
+        body.dark-mode .btn-secondary {
+            background: #334155;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode th {
+            background: #0f172a;
+            color: #94a3b8;
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode td {
+            color: #cbd5e1;
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode .table-wrapper {
+            border-color: #334155;
+        }
+
+        body.dark-mode .badge-warning {
+            background: #854d0e;
+            color: #fcd34d;
+        }
+
+        body.dark-mode .badge-success {
+            background: #065f46;
+            color: #6ee7b7;
+        }
+
+        body.dark-mode .badge-info {
+            background: #1e3a8a;
+            color: #93c5fd;
+        }
+
+        body.dark-mode .btn-details {
+            border-color: #475569;
+            color: #94a3b8;
+        }
+
+        body.dark-mode .btn-details:hover {
+            background: #fbbf24;
+            color: #0f172a;
+        }
+
+        body.dark-mode .modal-content {
+            background: #1e293b;
+            border: 1px solid #334155;
+        }
+
+        body.dark-mode .modal-header {
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode .info-item {
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode .info-label {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .info-value {
+            color: #f1f5f9;
         }
 
         /* Login Page */
@@ -173,7 +269,7 @@
         .header-logo {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.8rem;
         }
 
         .logo {
@@ -188,32 +284,32 @@
 
         .admin-badge {
             background: #fef3c7;
-            padding: 0.3rem 1rem;
+            padding: 0.3rem 0.8rem;
             border-radius: 40px;
             color: #d97706;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
             white-space: nowrap;
         }
 
         .header-info {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.5rem;
         }
 
         .date-badge {
             background: #f1f5f9;
-            padding: 0.3rem 1rem;
+            padding: 0.3rem 0.8rem;
             border-radius: 40px;
             color: #475569;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
             white-space: nowrap;
         }
 
@@ -224,27 +320,18 @@
             border-radius: 40px;
             color: #475569;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         .logout-btn {
             background: none;
             border: 1px solid #e2e8f0;
-            padding: 0.3rem 1rem;
+            padding: 0.3rem 0.8rem;
             border-radius: 8px;
             color: #64748b;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             white-space: nowrap;
-        }
-
-        /* Main Content */
-        .main-content {
-            margin-top: 60px;
-            height: calc(100vh - 60px);
-            overflow-y: auto;
-            padding: 1rem;
-            -webkit-overflow-scrolling: touch;
         }
 
         /* أزرار المساعدة */
@@ -277,8 +364,21 @@
             transform: scale(1.1);
         }
 
-        .scroll-top {
+        .export-btn {
             background: #0f172a;
+        }
+
+        .scroll-top {
+            background: #d97706;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 60px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+            padding: 1rem;
+            -webkit-overflow-scrolling: touch;
         }
 
         /* KPI Cards */
@@ -295,6 +395,12 @@
             padding: 1.2rem;
             border: 1px solid #e2e8f0;
             transition: all 0.3s;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.2);
+            border-color: #d97706;
         }
 
         .kpi-header {
@@ -327,7 +433,7 @@
             font-size: 0.85rem;
         }
 
-        /* Stats Grid - مؤشرات جديدة */
+        /* Stats Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -389,32 +495,47 @@
             display: flex;
             align-items: center;
             gap: 0.8rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .birthday-header i {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
         .birthday-header span {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
 
         .birthday-list {
             display: flex;
-            gap: 0.8rem;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
         .birthday-item {
-            background: rgba(255,255,255,0.2);
-            padding: 0.4rem 1rem;
+            background: rgba(255,255,255,0.15);
+            padding: 0.6rem 1rem;
             border-radius: 40px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.8rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .birthday-item i {
+            font-size: 1rem;
+        }
+
+        .birthday-days {
+            background: rgba(255,255,255,0.3);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: auto;
         }
 
         /* Filter Section */
@@ -663,53 +784,65 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .main-header {
+                padding: 0.5rem 0.8rem;
+            }
+
+            .header-logo {
+                gap: 0.5rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
             .admin-badge span {
-                display: none;
+                display: inline; /* النص يظهر دائماً */
             }
-            
+
             .date-badge span {
-                display: none;
+                display: inline; /* النص يظهر دائماً */
             }
-            
-            .logout-btn span {
-                display: none;
+
+            .header-info {
+                gap: 0.3rem;
             }
-            
+
             .kpi-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 0.5rem;
             }
-            
+
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 0.5rem;
             }
-            
+
             .filter-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .filter-actions {
                 flex-direction: column;
             }
-            
+
             .filter-actions button {
                 width: 100%;
             }
-            
+
             .help-buttons {
                 bottom: 10px;
                 left: 10px;
             }
-            
+
             .help-btn {
                 width: 45px;
                 height: 45px;
                 font-size: 1.1rem;
             }
-            
-            .table-container {
-                margin-bottom: 70px;
+
+            .birthday-item {
+                font-size: 0.8rem;
             }
         }
 
@@ -717,21 +850,38 @@
             .kpi-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .stats-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .admin-badge {
-                padding: 0.3rem 0.8rem;
+                padding: 0.2rem 0.6rem;
+                font-size: 0.75rem;
             }
-            
+
             .date-badge {
-                padding: 0.3rem 0.8rem;
+                padding: 0.2rem 0.6rem;
+                font-size: 0.75rem;
             }
-            
+
+            .theme-toggle {
+                padding: 0.2rem 0.6rem;
+                font-size: 0.8rem;
+            }
+
             .logout-btn {
-                padding: 0.3rem 0.8rem;
+                padding: 0.2rem 0.6rem;
+                font-size: 0.75rem;
+            }
+
+            .birthday-header span {
+                font-size: 0.9rem;
+            }
+
+            .birthday-item {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
             }
         }
     </style>
@@ -776,8 +926,8 @@
         <div class="main-content">
             <!-- أزرار المساعدة -->
             <div class="help-buttons">
-                <button class="help-btn" onclick="refreshData()" title="تحديث البيانات">
-                    <i class="fas fa-sync-alt"></i>
+                <button class="help-btn export-btn" onclick="exportToExcel()" title="تصدير إلى Excel">
+                    <i class="fas fa-file-excel"></i>
                 </button>
                 <button class="help-btn scroll-top" onclick="scrollToTop()" title="العودة للأعلى">
                     <i class="fas fa-arrow-up"></i>
@@ -980,7 +1130,7 @@
             `;
         }
 
-        // عرض المؤشرات الإضافية الجديدة
+        // عرض المؤشرات الإضافية
         function displayStats() {
             if (!registrations.length) return;
             
@@ -996,7 +1146,6 @@
             const oldest = ages.find(a => a.age === maxAge);
             const avgAge = (ages.reduce((a, b) => a + b.age, 0) / ages.length).toFixed(1);
             
-            const totalDegrees = registrations.reduce((sum, r) => sum + (r.degrees ? r.degrees.split(',').length : 1), 0);
             const serviceCounts = {
                 'فوري': registrations.filter(r => r.service === 'تسجيل فوري').length,
                 '6 أشهر': registrations.filter(r => r.service === 'اشتراك 6 أشهر').length,
@@ -1037,28 +1186,27 @@
             `;
         }
 
-        // عرض أعياد الميلاد
+        // عرض أعياد الميلاد (الاسم كامل الآن)
         function displayBirthdays() {
             if (!registrations.length) return;
             
             const upcoming = registrations
                 .map(r => ({...r, days: daysUntilBirthday(r.birthDate)}))
                 .filter(r => r.days <= 30)
-                .sort((a, b) => a.days - b.days)
-                .slice(0, 5);
+                .sort((a, b) => a.days - b.days);
 
             const list = document.getElementById('birthdayList');
             
             if (upcoming.length === 0) {
-                list.innerHTML = '<div class="birthday-item">لا توجد أعياد قريبة</div>';
+                list.innerHTML = '<div class="birthday-item"><i class="fas fa-cake-candles"></i> لا توجد أعياد قريبة</div>';
                 return;
             }
 
             list.innerHTML = upcoming.map(r => `
                 <div class="birthday-item">
                     <i class="fas fa-cake-candles"></i>
-                    <span>${r.nameAr.split(' ')[0]}</span>
-                    <span>${r.days} يوم</span>
+                    <span>${r.nameAr}</span>
+                    <span class="birthday-days">بعد ${r.days} يوم</span>
                 </div>
             `).join('');
         }
@@ -1141,8 +1289,19 @@
             displayTable(currentData);
         }
 
-        function refreshData() {
-            displayTable(currentData);
+        // تصدير إلى Excel
+        function exportToExcel() {
+            let csv = "الاسم بالعربية,الاسم بالفرنسية,تاريخ الميلاد,المدينة,الخدمة,تاريخ التسجيل,الواتساب,البريد الإلكتروني,الشهادات\n";
+            
+            currentData.forEach(r => {
+                csv += `"${r.nameAr}","${r.nameFr}","${r.birthDate}","${r.city}","${r.service}","${r.regDate}","${r.whatsapp}","${r.email}","${r.degrees}"\n`;
+            });
+            
+            const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'المسجلين.csv';
+            link.click();
         }
 
         function scrollToTop() {
@@ -1178,7 +1337,7 @@
             const today = new Date();
             document.getElementById('currentDate').textContent = today.toLocaleDateString('ar-MA', { 
                 year: 'numeric', 
-                month: 'numeric', 
+                month: 'long', 
                 day: 'numeric' 
             });
         }
