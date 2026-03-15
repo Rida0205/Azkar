@@ -35,18 +35,16 @@
         .login-box {
             background: white;
             border-radius: 30px;
-            padding: 3rem 2rem;
+            padding: 2.5rem 1.5rem;
             width: 100%;
-            max-width: 420px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
             text-align: center;
         }
 
         .login-box .logo {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: #0f172a;
-            margin-bottom: 0.5rem;
         }
 
         .login-box .logo span {
@@ -55,55 +53,40 @@
 
         .login-box .hadith {
             color: #d97706;
-            font-size: 1rem;
-            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            margin: 1rem 0 1.5rem;
             padding: 1rem;
             background: #fef3c7;
             border-radius: 15px;
-            line-height: 1.6;
-        }
-
-        .login-box h2 {
-            color: #0f172a;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
         }
 
         .login-box input {
             width: 100%;
-            padding: 1.2rem;
-            margin-bottom: 1.5rem;
+            padding: 1rem;
+            margin-bottom: 1.2rem;
             border: 2px solid #e2e8f0;
             border-radius: 15px;
             font-size: 1.2rem;
-            font-family: 'Cairo', sans-serif;
             text-align: center;
             letter-spacing: 4px;
-            font-weight: 600;
         }
 
         .login-box button {
             width: 100%;
-            padding: 1.2rem;
+            padding: 1rem;
             background: #d97706;
             color: white;
             border: none;
             border-radius: 15px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .login-box button:hover {
-            background: #b45309;
         }
 
         .error-message {
             color: #ef4444;
             margin-top: 1rem;
             display: none;
-            font-weight: 500;
         }
 
         /* Dashboard */
@@ -120,23 +103,21 @@
         /* Header */
         .main-header {
             background: white;
-            padding: 0.8rem 2rem;
+            padding: 0.8rem 1rem;
             border-bottom: 1px solid #e2e8f0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 70px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-        }
-
-        .header-logo {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
         }
 
         .header-logo .logo {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #0f172a;
         }
@@ -147,230 +128,144 @@
 
         .admin-welcome {
             background: #fef3c7;
-            padding: 0.5rem 1.2rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 40px;
             color: #d97706;
             font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .header-info {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 0.85rem;
         }
 
         .date-display {
             background: #f1f5f9;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 40px;
             color: #475569;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-left: 1rem;
         }
 
         .logout-btn {
             background: none;
             border: 1px solid #e2e8f0;
-            padding: 0.4rem 1.2rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 8px;
             color: #64748b;
             cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
-
-        .logout-btn:hover {
-            background: #ef4444;
-            color: white;
-            border-color: #ef4444;
         }
 
         /* Main Content */
         .main-content {
+            margin-top: 70px;
             height: calc(100vh - 70px);
             overflow-y: auto;
-            padding: 1.5rem 2rem;
-        }
-
-        /* Stats Grid - مؤشرات قيمة */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .stat-card {
-            background: white;
-            border-radius: 20px;
-            padding: 1.5rem;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s;
-        }
-
-        .stat-card:hover {
-            border-color: #d97706;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.1);
-        }
-
-        .stat-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-        }
-
-        .stat-header h3 {
-            color: #64748b;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .stat-header i {
-            color: #d97706;
-            font-size: 1.2rem;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #0f172a;
-            margin-bottom: 0.3rem;
-        }
-
-        .stat-desc {
-            color: #64748b;
-            font-size: 0.8rem;
-        }
-
-        .stat-progress {
-            margin-top: 0.8rem;
-            height: 4px;
-            background: #f1f5f9;
-            border-radius: 2px;
-        }
-
-        .stat-progress-fill {
-            height: 4px;
-            background: #d97706;
-            border-radius: 2px;
+            padding: 1rem;
         }
 
         /* KPI Cards */
         .kpi-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.2rem;
-            margin-bottom: 2rem;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .kpi-card {
-            background: white;
-            border-radius: 20px;
-            padding: 1.5rem;
-            border: 1px solid #e2e8f0;
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-radius: 16px;
+            padding: 1rem;
             color: white;
         }
 
         .kpi-header {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: 0.8rem;
+            margin-bottom: 0.5rem;
         }
 
         .kpi-icon {
-            width: 48px;
-            height: 48px;
+            width: 40px;
+            height: 40px;
             background: rgba(217, 119, 6, 0.2);
-            border-radius: 16px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #d97706;
-            font-size: 1.4rem;
-        }
-
-        .kpi-title {
-            font-size: 1rem;
-            color: #94a3b8;
+            font-size: 1.2rem;
         }
 
         .kpi-value {
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
         }
 
-        .kpi-sub {
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+        }
+
+        .stat-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
         }
 
         /* Filter Section */
         .filter-section {
             background: white;
-            border-radius: 20px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #e2e8f0;
-        }
-
-        .filter-title {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            border-radius: 16px;
+            padding: 1rem;
             margin-bottom: 1rem;
-            color: #0f172a;
-            font-weight: 600;
         }
 
         .filter-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
-        }
-
-        .filter-item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .filter-item label {
-            color: #64748b;
-            font-size: 0.85rem;
-            font-weight: 500;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.8rem;
         }
 
         .filter-item select, .filter-item input {
-            padding: 0.7rem;
+            width: 100%;
+            padding: 0.5rem;
             border: 1px solid #e2e8f0;
-            border-radius: 10px;
+            border-radius: 8px;
             font-family: 'Cairo', sans-serif;
-            background: white;
         }
 
         .filter-actions {
             display: flex;
-            gap: 1rem;
+            gap: 0.5rem;
             align-items: flex-end;
         }
 
         .filter-actions button {
-            padding: 0.7rem 1.5rem;
+            padding: 0.5rem 1rem;
             border: none;
-            border-radius: 10px;
+            border-radius: 8px;
             cursor: pointer;
-            font-weight: 500;
         }
 
         .apply-filter {
@@ -378,103 +273,55 @@
             color: white;
         }
 
-        .reset-filter {
-            background: #f1f5f9;
-            color: #64748b;
-        }
-
         /* Table */
         .table-container {
             background: white;
-            border-radius: 20px;
-            padding: 1.5rem;
-            border: 1px solid #e2e8f0;
-        }
-
-        .table-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .table-header h3 {
-            color: #0f172a;
-            font-size: 1.1rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .results-count {
-            color: #64748b;
-            font-size: 0.9rem;
+            border-radius: 16px;
+            padding: 1rem;
         }
 
         .table-wrapper {
             overflow-x: auto;
-            max-height: 350px;
-            overflow-y: auto;
-            border: 1px solid #f1f5f9;
-            border-radius: 12px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 1200px;
-            font-size: 0.9rem;
+            min-width: 800px;
+            font-size: 0.85rem;
         }
 
         th {
             text-align: right;
-            padding: 1rem 0.8rem;
+            padding: 0.8rem 0.5rem;
             color: #64748b;
             font-weight: 600;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             border-bottom: 2px solid #e2e8f0;
             background: #f8fafc;
-            position: sticky;
-            top: 0;
-            z-index: 10;
         }
 
         td {
-            padding: 0.9rem 0.8rem;
+            padding: 0.7rem 0.5rem;
             border-bottom: 1px solid #f1f5f9;
-            color: #334155;
-        }
-
-        tr:hover {
-            background: #f8fafc;
         }
 
         .service-badge {
             background: #fef3c7;
             color: #d97706;
-            padding: 0.2rem 0.6rem;
+            padding: 0.2rem 0.5rem;
             border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
+            font-size: 0.7rem;
             display: inline-block;
         }
 
         .details-btn {
             background: none;
             border: 1px solid #e2e8f0;
-            color: #64748b;
-            padding: 0.3rem 0.8rem;
-            border-radius: 8px;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 0.8rem;
-            transition: all 0.3s;
-        }
-
-        .details-btn:hover {
-            background: #d97706;
-            color: white;
-            border-color: #d97706;
+            color: #64748b;
         }
 
         /* Modal */
@@ -489,7 +336,7 @@
             z-index: 1000;
             align-items: center;
             justify-content: center;
-            backdrop-filter: blur(5px);
+            padding: 1rem;
         }
 
         .modal.active {
@@ -498,82 +345,59 @@
 
         .modal-content {
             background: white;
-            border-radius: 30px;
-            width: 90%;
-            max-width: 700px;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 500px;
             max-height: 80vh;
             overflow-y: auto;
-            padding: 2rem;
+            padding: 1.5rem;
             position: relative;
         }
 
         .modal-close {
             position: absolute;
-            top: 1.5rem;
-            left: 1.5rem;
+            top: 1rem;
+            left: 1rem;
             background: none;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             cursor: pointer;
             color: #64748b;
-        }
-
-        .modal-close:hover {
-            color: #ef4444;
-        }
-
-        .modal-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .modal-header h2 {
-            color: #0f172a;
-            font-size: 1.5rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .modal-header p {
-            color: #64748b;
-            font-size: 1rem;
         }
 
         .info-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .info-item {
             border-bottom: 1px solid #f1f5f9;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.4rem;
         }
 
         .info-label {
             color: #64748b;
-            font-size: 0.8rem;
-            margin-bottom: 0.2rem;
+            font-size: 0.7rem;
         }
 
         .info-value {
             color: #0f172a;
             font-weight: 600;
-            font-size: 1rem;
         }
 
-        @media (max-width: 1200px) {
-            .stats-grid, .kpi-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            .stats-grid, .kpi-grid {
+            .kpi-grid, .stats-grid {
                 grid-template-columns: 1fr;
             }
             .filter-grid {
+                grid-template-columns: 1fr;
+            }
+            .filter-actions {
+                flex-direction: column;
+            }
+            .info-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -586,7 +410,7 @@
             <div class="logo">e<span>concours</span>.ma</div>
             <div class="hadith">"الله في عون العبد ما دام العبد في عون أخيه"</div>
             <h2>لوحة التحكم</h2>
-            <input type="password" id="passwordInput" placeholder="أدخل رمز الدخول" maxlength="4" onkeypress="handleKeyPress(event)">
+            <input type="password" id="passwordInput" placeholder="أدخل الرمز" maxlength="4">
             <button onclick="checkPassword()">دخول</button>
             <div class="error-message" id="errorMessage">رمز الدخول غير صحيح</div>
         </div>
@@ -594,100 +418,48 @@
 
     <!-- Dashboard -->
     <div class="dashboard-container" id="dashboard">
-        <!-- Header -->
         <div class="main-header">
-            <div class="header-logo">
-                <div class="logo">e<span>concours</span>.ma</div>
-                <div class="admin-welcome" id="adminWelcome">
-                    <i class="fas fa-user-circle"></i>
-                    <span id="adminName">...</span>
-                </div>
+            <div>
+                <span class="logo">e<span>concours</span>.ma</span>
+                <span class="admin-welcome" id="adminWelcome"></span>
             </div>
-            <div class="header-info">
-                <div class="date-display" id="dateDisplay">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span id="currentDate"></span>
-                </div>
-                <button class="logout-btn" onclick="logout()">تسجيل الخروج</button>
+            <div>
+                <span class="date-display" id="currentDate"></span>
+                <button class="logout-btn" onclick="logout()">خروج</button>
             </div>
         </div>
 
-        <!-- Main Content -->
         <div class="main-content">
-            <!-- KPI Cards - مؤشرات قيمة -->
             <div class="kpi-grid" id="kpiGrid"></div>
-
-            <!-- Stats Grid - مؤشرات إضافية -->
             <div class="stats-grid" id="statsGrid"></div>
 
-            <!-- Birthday Alert -->
-            <div class="filter-section" id="birthdayAlert" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: white;">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <i class="fas fa-cake-candles" style="font-size: 1.5rem;"></i>
-                        <h3 style="color: white;">أعياد الميلاد القريبة</h3>
-                    </div>
-                    <div class="birthday-list" id="birthdayList" style="display: flex; gap: 0.8rem; flex-wrap: wrap;"></div>
-                </div>
-            </div>
-
-            <!-- Filter Section -->
+            <!-- Filter -->
             <div class="filter-section">
-                <div class="filter-title">
-                    <i class="fas fa-filter" style="color: #d97706;"></i>
-                    <span>فلترة البيانات</span>
-                </div>
                 <div class="filter-grid">
                     <div class="filter-item">
-                        <label>الخدمة</label>
                         <select id="filterService">
                             <option value="all">الكل</option>
                             <option value="تسجيل فوري">تسجيل فوري</option>
-                            <option value="اشتراك 6 أشهر">اشتراك 6 أشهر</option>
-                            <option value="اشتراك 12 شهر">اشتراك 12 شهر</option>
-                            <option value="تسجيل مجاني">تسجيل مجاني</option>
+                            <option value="اشتراك 6 أشهر">6 أشهر</option>
+                            <option value="اشتراك 12 شهر">12 شهر</option>
+                            <option value="تسجيل مجاني">مجاني</option>
                         </select>
                     </div>
                     <div class="filter-item">
-                        <label>المدينة</label>
-                        <select id="filterCity">
-                            <option value="all">الكل</option>
-                        </select>
+                        <select id="filterCity"><option value="all">كل المدن</option></select>
                     </div>
                     <div class="filter-item">
-                        <label>الشهادة</label>
-                        <select id="filterDegree">
-                            <option value="all">الكل</option>
-                        </select>
-                    </div>
-                    <div class="filter-item">
-                        <label>الفئة العمرية</label>
-                        <select id="filterAge">
-                            <option value="all">الكل</option>
-                            <option value="18-25">18 - 25 سنة</option>
-                            <option value="26-30">26 - 30 سنة</option>
-                            <option value="31-40">31 - 40 سنة</option>
-                            <option value="40+">أكثر من 40 سنة</option>
-                        </select>
-                    </div>
-                    <div class="filter-item">
-                        <label>بحث بالاسم</label>
-                        <input type="text" id="filterName" placeholder="اكتب الاسم...">
+                        <input type="text" id="filterName" placeholder="بحث بالاسم">
                     </div>
                     <div class="filter-actions">
-                        <button class="apply-filter" onclick="applyFilters()"><i class="fas fa-check"></i> تطبيق</button>
-                        <button class="reset-filter" onclick="resetFilters()"><i class="fas fa-redo"></i> إعادة</button>
+                        <button class="apply-filter" onclick="applyFilters()">تطبيق</button>
+                        <button onclick="resetFilters()">إعادة</button>
                     </div>
                 </div>
             </div>
 
             <!-- Table -->
             <div class="table-container">
-                <div class="table-header">
-                    <h3><i class="fas fa-users" style="color: #d97706;"></i> قائمة المسجلين</h3>
-                    <span class="results-count" id="resultsCount">عرض 10 من 10 سجل</span>
-                </div>
-                
                 <div class="table-wrapper">
                     <table id="registrationsTable">
                         <thead>
@@ -700,7 +472,7 @@
                                 <th>الخدمة</th>
                                 <th>تاريخ التسجيل</th>
                                 <th>الواتساب</th>
-                                <th>التفاصيل</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody id="tableBody"></tbody>
@@ -710,193 +482,35 @@
         </div>
     </div>
 
-    <!-- Modal for Details -->
+    <!-- Modal -->
     <div class="modal" id="detailsModal">
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <button class="modal-close" onclick="closeModal()">✖</button>
             <div class="modal-header">
-                <h2 id="modalName">...</h2>
-                <p id="modalNameFr">...</p>
+                <h2 id="modalName"></h2>
+                <p id="modalNameFr"></p>
             </div>
             <div class="info-grid" id="modalContent"></div>
         </div>
     </div>
 
     <script>
-        // المديرين المسموح لهم
-        const admins = {
-            "1280": "رضا السايح",
-            "1997": "أيمن ممدوح"
-        };
-
+        // المديرين
+        const admins = {"1280": "رضا السايح", "1997": "أيمن ممدوح"};
         let currentAdmin = "";
-        
-        // بيانات موسعة
-        const registrations = [
-            {
-                id: 1,
-                nameAr: "أحمد بن محمد",
-                nameFr: "Ahmed Ben Mohamed",
-                birthDate: "1995-03-20",
-                birthPlace: "الدار البيضاء",
-                address: "شارع محمد الخامس، الدار البيضاء",
-                cin: "BE123456",
-                whatsapp: "0612345678",
-                email: "ahmed@gmail.com",
-                degrees: "بكالوريوس إدارة أعمال",
-                school: "جامعة الحسن الثاني",
-                service: "اشتراك 12 شهر",
-                regDate: "2026-03-01",
-                city: "الدار البيضاء"
-            },
-            {
-                id: 2,
-                nameAr: "فاطمة الزهراء",
-                nameFr: "Fatima Zahra",
-                birthDate: "1998-05-15",
-                birthPlace: "الرباط",
-                address: "حي أكدال، الرباط",
-                cin: "LJ789012",
-                whatsapp: "0623456789",
-                email: "fatima@gmail.com",
-                degrees: "ماستر قانون",
-                school: "جامعة محمد الخامس",
-                service: "اشتراك 6 أشهر",
-                regDate: "2026-03-02",
-                city: "الرباط"
-            },
-            {
-                id: 3,
-                nameAr: "يوسف العلوي",
-                nameFr: "Youssef Alaoui",
-                birthDate: "1997-11-25",
-                birthPlace: "فاس",
-                address: "شارع الحسن الثاني، فاس",
-                cin: "QA345678",
-                whatsapp: "0634567890",
-                email: "youssef@gmail.com",
-                degrees: "بكالوريوس علوم اقتصادية",
-                school: "جامعة سيدي محمد بن عبدالله",
-                service: "تسجيل فوري",
-                regDate: "2026-03-03",
-                city: "فاس"
-            },
-            {
-                id: 4,
-                nameAr: "كريمة السعدي",
-                nameFr: "Karima Saadi",
-                birthDate: "1996-12-10",
-                birthPlace: "مراكش",
-                address: "حي جليز، مراكش",
-                cin: "AB901234",
-                whatsapp: "0645678901",
-                email: "karima@gmail.com",
-                degrees: "ماستر هندسة مدنية",
-                school: "المدرسة المحمدية للمهندسين",
-                service: "تسجيل مجاني",
-                regDate: "2026-03-04",
-                city: "مراكش"
-            },
-            {
-                id: 5,
-                nameAr: "محمد أمين",
-                nameFr: "Mohamed Amine",
-                birthDate: "1999-01-05",
-                birthPlace: "طنجة",
-                address: "حي بني مكادة، طنجة",
-                cin: "CD567890",
-                whatsapp: "0656789012",
-                email: "mohamed@gmail.com",
-                degrees: "بكالوريوس طب",
-                school: "كلية الطب بطنجة",
-                service: "اشتراك 12 شهر",
-                regDate: "2026-03-05",
-                city: "طنجة"
-            },
-            {
-                id: 6,
-                nameAr: "سارة بناني",
-                nameFr: "Sara Benani",
-                birthDate: "1997-07-22",
-                birthPlace: "أكادير",
-                address: "شارع 20 غشت، أكادير",
-                cin: "EF123789",
-                whatsapp: "0667890123",
-                email: "sara@gmail.com",
-                degrees: "ماستر تسيير الموارد البشرية",
-                school: "جامعة ابن زهر",
-                service: "اشتراك 6 أشهر",
-                regDate: "2026-03-06",
-                city: "أكادير"
-            },
-            {
-                id: 7,
-                nameAr: "عمر الفاسي",
-                nameFr: "Omar Fassi",
-                birthDate: "1995-09-18",
-                birthPlace: "وجدة",
-                address: "شارع محمد السادس، وجدة",
-                cin: "GH456123",
-                whatsapp: "0678901234",
-                email: "omar@gmail.com",
-                degrees: "بكالوريوس محاسبة",
-                school: "جامعة محمد الأول",
-                service: "تسجيل فوري",
-                regDate: "2026-03-07",
-                city: "وجدة"
-            },
-            {
-                id: 8,
-                nameAr: "نادية العمري",
-                nameFr: "Nadia Omari",
-                birthDate: "1998-04-12",
-                birthPlace: "تطوان",
-                address: "شارع الحسن الأول، تطوان",
-                cin: "IJ789456",
-                whatsapp: "0689012345",
-                email: "nadia@gmail.com",
-                degrees: "ماستر صحافة",
-                school: "جامعة عبد المالك السعدي",
-                service: "تسجيل مجاني",
-                regDate: "2026-03-08",
-                city: "تطوان"
-            },
-            {
-                id: 9,
-                nameAr: "حسن المرابط",
-                nameFr: "Hassan Mrabet",
-                birthDate: "1996-08-30",
-                birthPlace: "مكناس",
-                address: "حي حمرية، مكناس",
-                cin: "KL321654",
-                whatsapp: "0690123456",
-                email: "hassan@gmail.com",
-                degrees: "بكالوريوس علوم سياسية",
-                school: "جامعة مولاي إسماعيل",
-                service: "اشتراك 12 شهر",
-                regDate: "2026-03-09",
-                city: "مكناس"
-            },
-            {
-                id: 10,
-                nameAr: "ليلى الشرقي",
-                nameFr: "Laila Charki",
-                birthDate: "1997-11-03",
-                birthPlace: "العيون",
-                address: "شارع المطار، العيون",
-                cin: "MN654987",
-                whatsapp: "0601234567",
-                email: "laila@gmail.com",
-                degrees: "ماستر تنمية محلية",
-                school: "جامعة ابن طفيل",
-                service: "اشتراك 6 أشهر",
-                regDate: "2026-03-10",
-                city: "العيون"
-            }
-        ];
+        let registrations = [];
+        let currentData = [];
 
-        let currentData = [...registrations];
+        // تحميل البيانات من JSON
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                registrations = data;
+                currentData = [...registrations];
+            })
+            .catch(error => console.error('خطأ في تحميل البيانات:', error));
 
+        // حساب العمر
         function calculateAge(birthDate) {
             const today = new Date();
             const birth = new Date(birthDate);
@@ -906,222 +520,103 @@
             return age;
         }
 
-        function getAgeGroup(age) {
-            if (age >= 18 && age <= 25) return "18-25";
-            if (age >= 26 && age <= 30) return "26-30";
-            if (age >= 31 && age <= 40) return "31-40";
-            if (age > 40) return "40+";
-            return "all";
-        }
-
-        function daysUntilBirthday(birthDate) {
-            const today = new Date();
-            const birth = new Date(birthDate);
-            const nextBirthday = new Date(today.getFullYear(), birth.getMonth(), birth.getDate());
-            if (today > nextBirthday) nextBirthday.setFullYear(today.getFullYear() + 1);
-            return Math.ceil((nextBirthday - today) / (1000 * 60 * 60 * 24));
-        }
-
+        // عرض المؤشرات
         function displayKPIs() {
+            if (!registrations.length) return;
             const total = registrations.length;
             const thisMonth = registrations.filter(r => new Date(r.regDate).getMonth() === new Date().getMonth()).length;
-            const free = registrations.filter(r => r.service === "تسجيل مجاني").length;
-            const conversionRate = ((thisMonth / total) * 100).toFixed(1);
-            const uniqueCities = [...new Set(registrations.map(r => r.city))].length;
-            const avgAge = (registrations.reduce((sum, r) => sum + calculateAge(r.birthDate), 0) / total).toFixed(1);
+            const cities = [...new Set(registrations.map(r => r.city))].length;
             const paid = registrations.filter(r => r.service !== "تسجيل مجاني").length;
 
             document.getElementById('kpiGrid').innerHTML = `
                 <div class="kpi-card">
-                    <div class="kpi-header">
-                        <div class="kpi-icon"><i class="fas fa-chart-line"></i></div>
-                        <div>
-                            <div class="kpi-title">معدل النمو الشهري</div>
-                            <div class="kpi-value">+${conversionRate}%</div>
-                        </div>
-                    </div>
-                    <div class="kpi-sub">مقارنة بالشهر الماضي</div>
+                    <div class="kpi-header"><div class="kpi-icon"><i class="fas fa-users"></i></div><div class="kpi-value">${total}</div></div>
+                    <div>إجمالي المسجلين</div>
                 </div>
                 <div class="kpi-card">
-                    <div class="kpi-header">
-                        <div class="kpi-icon"><i class="fas fa-city"></i></div>
-                        <div>
-                            <div class="kpi-title">التغطية الجغرافية</div>
-                            <div class="kpi-value">${uniqueCities}</div>
-                        </div>
-                    </div>
-                    <div class="kpi-sub">مدينة مختلفة</div>
+                    <div class="kpi-header"><div class="kpi-icon"><i class="fas fa-calendar"></i></div><div class="kpi-value">${thisMonth}</div></div>
+                    <div>هذا الشهر</div>
                 </div>
                 <div class="kpi-card">
-                    <div class="kpi-header">
-                        <div class="kpi-icon"><i class="fas fa-percent"></i></div>
-                        <div>
-                            <div class="kpi-title">نسبة المسجلين المدفوع</div>
-                            <div class="kpi-value">${((paid/total)*100).toFixed(1)}%</div>
-                        </div>
-                    </div>
-                    <div class="kpi-sub">${paid} من أصل ${total} مسجل</div>
+                    <div class="kpi-header"><div class="kpi-icon"><i class="fas fa-city"></i></div><div class="kpi-value">${cities}</div></div>
+                    <div>مدينة</div>
                 </div>
             `;
         }
 
         function displayStats() {
-            const total = registrations.length;
+            if (!registrations.length) return;
             const ages = registrations.map(r => calculateAge(r.birthDate));
             const avgAge = (ages.reduce((a, b) => a + b, 0) / ages.length).toFixed(1);
             
-            const degreeTypes = {};
-            registrations.forEach(r => {
-                const type = r.degrees.split(' ')[0];
-                degreeTypes[type] = (degreeTypes[type] || 0) + 1;
-            });
-            const topDegree = Object.entries(degreeTypes).sort((a, b) => b[1] - a[1])[0] || ["لا يوجد", 0];
-            
-            const cityDistribution = {};
-            registrations.forEach(r => cityDistribution[r.city] = (cityDistribution[r.city] || 0) + 1);
-            const topCity = Object.entries(cityDistribution).sort((a, b) => b[1] - a[1])[0] || ["لا يوجد", 0];
-            
-            const serviceCounts = {
-                'فوري': registrations.filter(r => r.service === 'تسجيل فوري').length,
-                '6 أشهر': registrations.filter(r => r.service === 'اشتراك 6 أشهر').length,
-                '12 شهر': registrations.filter(r => r.service === 'اشتراك 12 شهر').length,
-                'مجاني': registrations.filter(r => r.service === 'تسجيل مجاني').length
-            };
-            const topService = Object.entries(serviceCounts).sort((a, b) => b[1] - a[1])[0];
-
             document.getElementById('statsGrid').innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-header"><h3>معدل الأعمار</h3><i class="fas fa-calendar-alt"></i></div>
-                    <div class="stat-number">${avgAge} <small>سنة</small></div>
-                    <div class="stat-desc">أصغر مسجل: ${Math.min(...ages)} سنة | أكبر مسجل: ${Math.max(...ages)} سنة</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-header"><h3>أكثر شهادة تسجيلاً</h3><i class="fas fa-graduation-cap"></i></div>
-                    <div class="stat-number">${topDegree[0]}</div>
-                    <div class="stat-desc">${topDegree[1]} مسجل (${((topDegree[1]/total)*100).toFixed(1)}%)</div>
-                    <div class="stat-progress"><div class="stat-progress-fill" style="width: ${(topDegree[1]/total)*100}%"></div></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-header"><h3>أكثر مدينة</h3><i class="fas fa-map-marker-alt"></i></div>
-                    <div class="stat-number">${topCity[0]}</div>
-                    <div class="stat-desc">${topCity[1]} مسجل (${((topCity[1]/total)*100).toFixed(1)}%)</div>
-                    <div class="stat-progress"><div class="stat-progress-fill" style="width: ${(topCity[1]/total)*100}%"></div></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-header"><h3>الخدمة الأكثر طلباً</h3><i class="fas fa-chart-pie"></i></div>
-                    <div class="stat-number">${topService[0]}</div>
-                    <div class="stat-desc">${topService[1]} مسجل (${((topService[1]/total)*100).toFixed(1)}%)</div>
-                    <div class="stat-progress"><div class="stat-progress-fill" style="width: ${(topService[1]/total)*100}%"></div></div>
-                </div>
+                <div class="stat-card"><div class="stat-header">معدل الأعمار</div><div class="stat-number">${avgAge}</div></div>
+                <div class="stat-card"><div class="stat-header">أصغر مسجل</div><div class="stat-number">${Math.min(...ages)}</div></div>
+                <div class="stat-card"><div class="stat-header">أكبر مسجل</div><div class="stat-number">${Math.max(...ages)}</div></div>
+                <div class="stat-card"><div class="stat-header">مدن</div><div class="stat-number">${[...new Set(registrations.map(r => r.city))].length}</div></div>
             `;
         }
 
-        function initializeFilters() {
+        // تهيئة خيارات المدن
+        function initCityFilter() {
             const cities = [...new Set(registrations.map(r => r.city))].sort();
-            const degrees = [...new Set(registrations.map(r => r.degrees.split(' ')[0]))].sort();
-            
-            const citySelect = document.getElementById('filterCity');
-            const degreeSelect = document.getElementById('filterDegree');
-            
-            cities.forEach(city => {
-                citySelect.innerHTML += `<option value="${city}">${city}</option>`;
-            });
-            
-            degrees.forEach(degree => {
-                degreeSelect.innerHTML += `<option value="${degree}">${degree}</option>`;
-            });
+            const select = document.getElementById('filterCity');
+            cities.forEach(city => select.innerHTML += `<option value="${city}">${city}</option>`);
         }
 
-        function displayBirthdays() {
-            const upcoming = registrations
-                .map(r => ({...r, days: daysUntilBirthday(r.birthDate)}))
-                .filter(r => r.days <= 30)
-                .sort((a, b) => a.days - b.days);
-
-            document.getElementById('birthdayList').innerHTML = upcoming.length ? 
-                upcoming.map(r => `
-                    <div style="background: rgba(255,255,255,0.2); padding: 0.4rem 1rem; border-radius: 40px; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-cake-candles"></i>
-                        <span>${r.nameAr}</span>
-                        <span style="background: rgba(255,255,255,0.3); padding: 0.2rem 0.5rem; border-radius: 20px; font-size: 0.75rem;">بعد ${r.days} يوم</span>
-                    </div>
-                `).join('') : 
-                '<div style="background: rgba(255,255,255,0.2); padding: 0.4rem 1rem; border-radius: 40px;">لا توجد أعياد قريبة</div>';
-        }
-
+        // عرض الجدول
         function displayTable(data) {
             const tbody = document.getElementById('tableBody');
-            document.getElementById('resultsCount').textContent = `عرض ${data.length} من ${registrations.length} سجل`;
-            
             tbody.innerHTML = data.map((r, i) => `
                 <tr>
-                    <td>${i + 1}</td>
-                    <td><strong>${r.nameAr}</strong></td>
+                    <td>${i+1}</td>
+                    <td>${r.nameAr}</td>
                     <td>${r.nameFr}</td>
                     <td>${r.birthDate}</td>
                     <td>${r.city}</td>
                     <td><span class="service-badge">${r.service}</span></td>
                     <td>${r.regDate}</td>
                     <td>${r.whatsapp}</td>
-                    <td><button class="details-btn" onclick='showDetails(${JSON.stringify(r).replace(/'/g, "\\'")})'><i class="fas fa-eye"></i> عرض</button></td>
+                    <td><button class="details-btn" onclick='showDetails(${JSON.stringify(r).replace(/'/g, "\\'")})'>عرض</button></td>
                 </tr>
             `).join('');
         }
 
+        // الفلترة
         function applyFilters() {
             const service = document.getElementById('filterService').value;
             const city = document.getElementById('filterCity').value;
-            const degree = document.getElementById('filterDegree').value;
-            const ageGroup = document.getElementById('filterAge').value;
-            const nameSearch = document.getElementById('filterName').value.toLowerCase();
+            const name = document.getElementById('filterName').value.toLowerCase();
 
-            currentData = registrations.filter(r => {
-                if (service !== 'all' && r.service !== service) return false;
-                if (city !== 'all' && r.city !== city) return false;
-                if (degree !== 'all' && !r.degrees.includes(degree)) return false;
-                if (nameSearch && !r.nameAr.includes(nameSearch) && !r.nameFr.toLowerCase().includes(nameSearch)) return false;
-                
-                if (ageGroup !== 'all') {
-                    const age = calculateAge(r.birthDate);
-                    const group = getAgeGroup(age);
-                    if (group !== ageGroup) return false;
-                }
-                
-                return true;
-            });
-
+            currentData = registrations.filter(r => 
+                (service === 'all' || r.service === service) &&
+                (city === 'all' || r.city === city) &&
+                (name === '' || r.nameAr.includes(name) || r.nameFr.toLowerCase().includes(name))
+            );
             displayTable(currentData);
         }
 
         function resetFilters() {
             document.getElementById('filterService').value = 'all';
             document.getElementById('filterCity').value = 'all';
-            document.getElementById('filterDegree').value = 'all';
-            document.getElementById('filterAge').value = 'all';
             document.getElementById('filterName').value = '';
-            
             currentData = [...registrations];
             displayTable(currentData);
         }
 
-        function showDetails(person) {
-            document.getElementById('modalName').textContent = person.nameAr;
-            document.getElementById('modalNameFr').textContent = person.nameFr;
-            
-            const modalContent = document.getElementById('modalContent');
-            modalContent.innerHTML = `
-                <div class="info-item"><div class="info-label">رقم البطاقة الوطنية</div><div class="info-value">${person.cin}</div></div>
-                <div class="info-item"><div class="info-label">مكان الإزدياد</div><div class="info-value">${person.birthPlace}</div></div>
-                <div class="info-item"><div class="info-label">العنوان الكامل</div><div class="info-value">${person.address}</div></div>
-                <div class="info-item"><div class="info-label">البريد الإلكتروني</div><div class="info-value">${person.email}</div></div>
-                <div class="info-item"><div class="info-label">الشهادة المحصل عليها</div><div class="info-value">${person.degrees}</div></div>
-                <div class="info-item"><div class="info-label">المدرسة/الجامعة</div><div class="info-value">${person.school}</div></div>
-                <div class="info-item"><div class="info-label">العمر</div><div class="info-value">${calculateAge(person.birthDate)} سنة</div></div>
-                <div class="info-item"><div class="info-label">الخدمة المشترك فيها</div><div class="info-value">${person.service}</div></div>
-                <div class="info-item"><div class="info-label">تاريخ التسجيل</div><div class="info-value">${person.regDate}</div></div>
-                <div class="info-item"><div class="info-label">مدينة الإقامة</div><div class="info-value">${person.city}</div></div>
+        // التفاصيل
+        function showDetails(p) {
+            document.getElementById('modalName').textContent = p.nameAr;
+            document.getElementById('modalNameFr').textContent = p.nameFr;
+            document.getElementById('modalContent').innerHTML = `
+                <div class="info-item"><div class="info-label">رقم البطاقة</div><div class="info-value">${p.cin}</div></div>
+                <div class="info-item"><div class="info-label">مكان الإزدياد</div><div class="info-value">${p.birthPlace}</div></div>
+                <div class="info-item"><div class="info-label">العنوان</div><div class="info-value">${p.address}</div></div>
+                <div class="info-item"><div class="info-label">البريد</div><div class="info-value">${p.email}</div></div>
+                <div class="info-item"><div class="info-label">الشهادة</div><div class="info-value">${p.degrees}</div></div>
+                <div class="info-item"><div class="info-label">المدرسة</div><div class="info-value">${p.school}</div></div>
+                <div class="info-item"><div class="info-label">العمر</div><div class="info-value">${calculateAge(p.birthDate)}</div></div>
             `;
-            
             document.getElementById('detailsModal').classList.add('active');
         }
 
@@ -1129,45 +624,37 @@
             document.getElementById('detailsModal').classList.remove('active');
         }
 
-        function updateDate() {
-            const today = new Date();
-            document.getElementById('currentDate').textContent = today.toLocaleDateString('ar-MA', { year: 'numeric', month: 'long', day: 'numeric' });
-        }
-
+        // الدخول
         function checkPassword() {
             const code = document.getElementById('passwordInput').value;
-            
             if (admins[code]) {
                 currentAdmin = admins[code];
-                document.getElementById('adminName').textContent = currentAdmin;
+                document.getElementById('adminWelcome').textContent = currentAdmin;
                 document.getElementById('loginPage').style.display = 'none';
                 document.getElementById('dashboard').classList.add('active');
-                initializeDashboard();
+                
+                // انتظر تحميل البيانات
+                setTimeout(() => {
+                    displayKPIs();
+                    displayStats();
+                    initCityFilter();
+                    displayTable(registrations);
+                }, 500);
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
             }
         }
 
-        function handleKeyPress(e) {
-            if (e.key === 'Enter') checkPassword();
-        }
-
         function logout() {
             document.getElementById('loginPage').style.display = 'flex';
             document.getElementById('dashboard').classList.remove('active');
-            document.getElementById('passwordInput').value = '';
-            document.getElementById('errorMessage').style.display = 'none';
         }
 
-        function initializeDashboard() {
-            updateDate();
-            displayKPIs();
-            displayStats();
-            displayBirthdays();
-            initializeFilters();
-            currentData = [...registrations];
-            displayTable(currentData);
-        }
+        // تحديث التاريخ
+        setInterval(() => {
+            const today = new Date();
+            document.getElementById('currentDate').textContent = today.toLocaleDateString('ar-MA');
+        }, 1000);
     </script>
 </body>
 </html>
