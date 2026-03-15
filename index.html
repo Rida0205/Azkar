@@ -19,12 +19,13 @@
 
         body {
             background: #f1f5f9;
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
         }
 
         /* Login Page */
         .login-container {
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -37,13 +38,13 @@
             border-radius: 30px;
             padding: 3rem 2rem;
             width: 100%;
-            max-width: 400px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 420px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             text-align: center;
         }
 
         .login-box .logo {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             color: #0f172a;
             margin-bottom: 0.5rem;
@@ -55,28 +56,31 @@
 
         .login-box .hadith {
             color: #d97706;
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem;
+            background: #fef3c7;
+            border-radius: 15px;
+            line-height: 1.6;
         }
 
         .login-box h2 {
             color: #0f172a;
             margin-bottom: 2rem;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
 
         .login-box input {
             width: 100%;
-            padding: 1rem;
+            padding: 1.2rem;
             margin-bottom: 1.5rem;
             border: 2px solid #e2e8f0;
             border-radius: 15px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-family: 'Cairo', sans-serif;
             text-align: center;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
+            font-weight: 600;
         }
 
         .login-box input:focus {
@@ -86,12 +90,12 @@
 
         .login-box button {
             width: 100%;
-            padding: 1rem;
+            padding: 1.2rem;
             background: #d97706;
             color: white;
             border: none;
             border-radius: 15px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s;
@@ -106,16 +110,24 @@
             color: #ef4444;
             margin-top: 1rem;
             display: none;
+            font-weight: 500;
         }
 
         /* Dashboard */
         .dashboard-container {
             display: none;
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .dashboard-container.active {
+            display: block;
+        }
+
+        .dashboard-wrapper {
             display: flex;
+            height: 100%;
+            width: 100%;
         }
 
         /* Sidebar */
@@ -123,21 +135,22 @@
             width: 280px;
             background: #0f172a;
             color: white;
-            position: fixed;
             height: 100vh;
             overflow-y: auto;
-            transition: all 0.3s;
+            flex-shrink: 0;
         }
 
         .sidebar-header {
-            padding: 2rem 1.5rem 1rem;
+            padding: 2rem 1.5rem;
             text-align: center;
+            border-bottom: 1px solid #334155;
         }
 
         .sidebar-header .logo {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 700;
             color: white;
+            margin-bottom: 1rem;
         }
 
         .sidebar-header .logo span {
@@ -146,23 +159,28 @@
 
         .sidebar-header .hadith {
             color: #d97706;
-            font-size: 0.85rem;
-            margin-top: 1rem;
+            font-size: 0.9rem;
             padding: 1rem;
             background: #1e293b;
-            border-radius: 10px;
+            border-radius: 12px;
             line-height: 1.5;
+        }
+
+        .sidebar-menu {
+            padding: 1.5rem 1rem;
         }
 
         .menu-item {
             display: flex;
             align-items: center;
             gap: 1rem;
-            padding: 0.8rem 1.5rem;
+            padding: 0.9rem 1rem;
             color: #cbd5e1;
             text-decoration: none;
+            border-radius: 12px;
             transition: all 0.3s;
-            margin: 0.25rem 0;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
         }
 
         .menu-item:hover, .menu-item.active {
@@ -171,64 +189,67 @@
         }
 
         .menu-item i {
-            width: 20px;
+            width: 24px;
+            font-size: 1.2rem;
         }
 
         /* Main Content */
         .main-content {
             flex: 1;
-            margin-right: 280px;
+            height: 100vh;
+            overflow-y: auto;
             padding: 1.5rem;
             background: #f8fafc;
-            min-height: 100vh;
         }
 
         /* Header */
         .dashboard-header {
             background: white;
-            border-radius: 20px;
-            padding: 1rem 2rem;
+            border-radius: 16px;
+            padding: 1.2rem 1.8rem;
             margin-bottom: 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid #e2e8f0;
         }
 
         .header-title h2 {
             color: #0f172a;
             font-size: 1.3rem;
+            font-weight: 600;
         }
 
         .header-title p {
             color: #64748b;
             font-size: 0.9rem;
+            margin-top: 0.2rem;
         }
 
         .date-display {
             background: #fef3c7;
-            padding: 0.5rem 1rem;
-            border-radius: 10px;
+            padding: 0.7rem 1.2rem;
+            border-radius: 40px;
             color: #d97706;
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-size: 0.95rem;
         }
 
         /* Stats Grid */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.2rem;
             margin-bottom: 1.5rem;
         }
 
         .stat-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 1.5rem;
             border: 1px solid #e2e8f0;
             display: flex;
@@ -238,7 +259,7 @@
 
         .stat-info h3 {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
@@ -253,53 +274,75 @@
             font-size: 0.9rem;
             color: #64748b;
             font-weight: 400;
+            margin-right: 0.3rem;
         }
 
         .stat-icon {
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             background: #fef3c7;
-            border-radius: 15px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #d97706;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
 
         /* Birthday Alert */
         .birthday-alert {
-            background: linear-gradient(135deg, #d97706, #fbbf24);
-            border-radius: 20px;
-            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            border-radius: 16px;
+            padding: 1.2rem 1.8rem;
             margin-bottom: 1.5rem;
             color: white;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
+        }
+
+        .birthday-alert-left {
+            display: flex;
+            align-items: center;
             gap: 1rem;
         }
 
-        .birthday-alert i {
+        .birthday-alert-left i {
             font-size: 2rem;
-            margin-left: 1rem;
+        }
+
+        .birthday-alert-left h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
         }
 
         .birthday-list {
             display: flex;
-            gap: 1rem;
+            gap: 0.8rem;
             flex-wrap: wrap;
         }
 
         .birthday-person {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.15);
             padding: 0.5rem 1rem;
-            border-radius: 50px;
+            border-radius: 40px;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-size: 0.9rem;
             backdrop-filter: blur(5px);
+        }
+
+        .birthday-person i {
+            font-size: 0.9rem;
+        }
+
+        .birthday-days {
+            background: rgba(255,255,255,0.3);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
         }
 
         /* Charts */
@@ -312,43 +355,43 @@
 
         .chart-container {
             background: white;
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 1.2rem;
             border: 1px solid #e2e8f0;
+            height: 260px;
         }
 
         .chart-container h3 {
             color: #0f172a;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             font-size: 1rem;
+            font-weight: 600;
         }
 
         canvas {
-            max-height: 200px;
             width: 100% !important;
+            height: 180px !important;
         }
 
         /* Table */
         .table-container {
             background: white;
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 1.2rem;
             border: 1px solid #e2e8f0;
-            overflow-x: auto;
         }
 
         .table-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-            gap: 1rem;
+            margin-bottom: 1.2rem;
         }
 
         .table-header h3 {
             color: #0f172a;
             font-size: 1.1rem;
+            font-weight: 600;
         }
 
         .search-box {
@@ -357,92 +400,87 @@
         }
 
         .search-box input {
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1rem;
             border: 1px solid #e2e8f0;
             border-radius: 8px;
             font-family: 'Cairo', sans-serif;
-            width: 200px;
+            width: 220px;
+            font-size: 0.9rem;
         }
 
         .search-box button {
             background: #d97706;
             color: white;
             border: none;
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1.2rem;
             border-radius: 8px;
             cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #f1f5f9;
+            border-radius: 12px;
         }
 
         table {
             width: 100%;
-            min-width: 1000px;
             border-collapse: collapse;
+            min-width: 1400px;
+            font-size: 0.9rem;
         }
 
         th {
             text-align: right;
-            padding: 1rem 0.5rem;
+            padding: 1rem 0.8rem;
             color: #64748b;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.8rem;
-            border-bottom: 1px solid #e2e8f0;
-            white-space: nowrap;
+            border-bottom: 2px solid #e2e8f0;
+            background: #f8fafc;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         td {
-            padding: 1rem 0.5rem;
+            padding: 0.9rem 0.8rem;
             border-bottom: 1px solid #f1f5f9;
             color: #334155;
-            font-size: 0.9rem;
-            white-space: nowrap;
         }
 
-        .birthday-badge {
+        tr:hover {
+            background: #f8fafc;
+        }
+
+        .service-badge {
             background: #fef3c7;
             color: #d97706;
-            padding: 0.2rem 0.5rem;
+            padding: 0.2rem 0.6rem;
             border-radius: 20px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 600;
             display: inline-block;
-            margin-right: 0.5rem;
-        }
-
-        .action-btn {
-            color: #64748b;
-            margin: 0 0.25rem;
-            cursor: pointer;
-        }
-
-        .action-btn:hover {
-            color: #d97706;
         }
 
         /* Responsive */
-        @media (max-width: 1024px) {
-            .sidebar {
-                width: 240px;
-            }
-            .main-content {
-                margin-right: 240px;
+        @media (max-width: 1200px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 768px) {
-            .dashboard-container.active {
+            .dashboard-wrapper {
                 flex-direction: column;
             }
             
             .sidebar {
                 width: 100%;
                 height: auto;
-                position: relative;
-                padding-bottom: 1rem;
-            }
-            
-            .main-content {
-                margin-right: 0;
-                padding: 1rem;
             }
             
             .charts-row {
@@ -450,31 +488,13 @@
             }
             
             .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
             }
             
             .birthday-alert {
                 flex-direction: column;
                 align-items: flex-start;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .dashboard-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .search-box {
-                width: 100%;
-            }
-            
-            .search-box input {
-                width: 100%;
+                gap: 1rem;
             }
         }
     </style>
@@ -484,161 +504,130 @@
     <div class="login-container" id="loginPage">
         <div class="login-box">
             <div class="logo">e<span>concours</span>.ma</div>
-            <div class="hadith">الله في عون العبد ما دام العبد في عون أخيه</div>
+            <div class="hadith">"الله في عون العبد ما دام العبد في عون أخيه"</div>
             <h2>لوحة التحكم</h2>
-            <input type="password" id="passwordInput" placeholder="أدخل رمز الدخول" maxlength="4" onkeypress="handleKeyPress(event)">
+            <input type="password" id="passwordInput" placeholder="••••" maxlength="4" onkeypress="handleKeyPress(event)">
             <button onclick="checkPassword()">دخول</button>
-            <div class="error-message" id="errorMessage">رمز الدخول غير صحيح</div>
+            <div class="error-message" id="errorMessage">كلمة السر غير صحيحة</div>
         </div>
     </div>
 
     <!-- Dashboard -->
     <div class="dashboard-container" id="dashboard">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <div class="logo">e<span>concours</span>.ma</div>
-                <div class="hadith">الله في عون العبد ما دام العبد في عون أخيه</div>
-            </div>
-            
-            <div class="menu-item active">
-                <i class="fas fa-home"></i>
-                <span>الرئيسية</span>
-            </div>
-            <div class="menu-item">
-                <i class="fas fa-users"></i>
-                <span>المسجلون</span>
-            </div>
-            <div class="menu-item">
-                <i class="fas fa-gift"></i>
-                <span>أعياد الميلاد</span>
-            </div>
-            <div class="menu-item">
-                <i class="fas fa-hand-holding-heart"></i>
-                <span>المجاني</span>
-            </div>
-            <div class="menu-item">
-                <i class="fas fa-chart-pie"></i>
-                <span>الإحصائيات</span>
-            </div>
-            <div class="menu-item" onclick="logout()">
-                <i class="fas fa-sign-out-alt"></i>
-                <span>تسجيل الخروج</span>
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Header -->
-            <div class="dashboard-header">
-                <div class="header-title">
-                    <h2>مرحباً بعودة، Admin</h2>
-                    <p>آخر تحديث: <span id="currentDate"></span></p>
+        <div class="dashboard-wrapper">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo">e<span>concours</span>.ma</div>
+                    <div class="hadith">الله في عون العبد<br>ما دام العبد في عون أخيه</div>
                 </div>
-                <div class="date-display">
-                    <i class="far fa-calendar-alt"></i>
-                    <span id="hijriDate"></span>
-                </div>
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-info">
-                        <h3>إجمالي المسجلين</h3>
-                        <div class="number">156 <small>مستفيد</small></div>
+                
+                <div class="sidebar-menu">
+                    <div class="menu-item active">
+                        <i class="fas fa-home"></i>
+                        <span>الرئيسية</span>
                     </div>
-                    <div class="stat-icon">
+                    <div class="menu-item">
                         <i class="fas fa-users"></i>
+                        <span>المسجلون</span>
                     </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-info">
-                        <h3>هذا الشهر</h3>
-                        <div class="number">31 <small>مستفيد</small></div>
+                    <div class="menu-item">
+                        <i class="fas fa-cake-candles"></i>
+                        <span>أعياد الميلاد</span>
                     </div>
-                    <div class="stat-icon">
-                        <i class="fas fa-calendar-check"></i>
-                    </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-info">
-                        <h3>المجاني</h3>
-                        <div class="number">25 <small>مستفيد</small></div>
-                    </div>
-                    <div class="stat-icon">
+                    <div class="menu-item">
                         <i class="fas fa-hand-holding-heart"></i>
+                        <span>المجاني</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>الإحصائيات</span>
+                    </div>
+                    <div class="menu-item" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>تسجيل الخروج</span>
                     </div>
                 </div>
-                
-                <div class="stat-card">
-                    <div class="stat-info">
-                        <h3>معدل الأعمار</h3>
-                        <div class="number">27.5 <small>سنة</small></div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Header -->
+                <div class="dashboard-header">
+                    <div class="header-title">
+                        <h2>مرحباً، Admin</h2>
+                        <p>آخر تحديث: <span id="currentDate"></span></p>
                     </div>
-                    <div class="stat-icon">
+                    <div class="date-display">
                         <i class="fas fa-calendar-alt"></i>
+                        <span id="hijriDate"></span>
                     </div>
                 </div>
-            </div>
 
-            <!-- Birthday Alert -->
-            <div class="birthday-alert" id="birthdayAlert">
-                <div style="display: flex; align-items: center;">
-                    <i class="fas fa-birthday-cake"></i>
-                    <span style="font-weight: 600;">أعياد الميلاد القريبة</span>
+                <!-- Stats Cards -->
+                <div class="stats-grid" id="statsGrid">
+                    <!-- ستتم التعبئة عبر JavaScript -->
                 </div>
-                <div class="birthday-list" id="birthdayList">
-                    <!-- سيتم التعبئة عبر JavaScript -->
-                </div>
-            </div>
 
-            <!-- Charts -->
-            <div class="charts-row">
-                <div class="chart-container">
-                    <h3>عدد المسجلين آخر 6 أشهر</h3>
-                    <canvas id="registrationsChart"></canvas>
-                </div>
-                
-                <div class="chart-container">
-                    <h3>توزيع الشهادات</h3>
-                    <canvas id="degreesChart"></canvas>
-                </div>
-            </div>
-
-            <!-- Table -->
-            <div class="table-container">
-                <div class="table-header">
-                    <h3>قائمة المسجلين</h3>
-                    <div class="search-box">
-                        <input type="text" id="searchInput" placeholder="بحث بالاسم أو الواتساب...">
-                        <button onclick="searchTable()"><i class="fas fa-search"></i></button>
+                <!-- Birthday Alert -->
+                <div class="birthday-alert" id="birthdayAlert">
+                    <div class="birthday-alert-left">
+                        <i class="fas fa-cake-candles"></i>
+                        <h3>أعياد الميلاد القريبة (خلال 30 يوم)</h3>
+                    </div>
+                    <div class="birthday-list" id="birthdayList">
+                        <!-- ستتم التعبئة عبر JavaScript -->
                     </div>
                 </div>
-                
-                <table id="registrationsTable">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>الاسم بالعربية</th>
-                            <th>الاسم بالفرنسية</th>
-                            <th>تاريخ الإزدياد</th>
-                            <th>العمر</th>
-                            <th>مكان الإزدياد</th>
-                            <th>العنوان</th>
-                            <th>الواتساب</th>
-                            <th>الإيميل</th>
-                            <th>الشهادات</th>
-                            <th>المدرسة</th>
-                            <th>الخدمة</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        <!-- سيتم التعبئة عبر JavaScript -->
-                    </tbody>
-                </table>
+
+                <!-- Charts -->
+                <div class="charts-row">
+                    <div class="chart-container">
+                        <h3>📊 تطور المسجلين (آخر 6 أشهر)</h3>
+                        <canvas id="registrationsChart"></canvas>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h3>🎓 توزيع الشهادات</h3>
+                        <canvas id="degreesChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>📋 قائمة المسجلين</h3>
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="بحث بالاسم أو الواتساب...">
+                            <button onclick="searchTable()"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="table-wrapper">
+                        <table id="registrationsTable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>الاسم بالعربية</th>
+                                    <th>الاسم بالفرنسية</th>
+                                    <th>تاريخ الميلاد</th>
+                                    <th>العمر</th>
+                                    <th>مكان الميلاد</th>
+                                    <th>العنوان</th>
+                                    <th>الواتساب</th>
+                                    <th>الإيميل</th>
+                                    <th>الشهادات</th>
+                                    <th>المدرسة</th>
+                                    <th>تاريخ التسجيل</th>
+                                    <th>الخدمة</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- ستتم التعبئة عبر JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -647,7 +636,7 @@
         // كلمة السر الثابتة
         const PASSWORD = "1280";
 
-        // بيانات افتراضية (سيتم استبدالها ببيانات Excel)
+        // بيانات افتراضية (30 مسجل)
         const registrations = [
             {
                 id: 1,
@@ -660,7 +649,8 @@
                 email: "ahmed@gmail.com",
                 degrees: "بكالوريوس إدارة أعمال",
                 school: "جامعة الحسن الثاني",
-                service: "اشتراك 12 شهر"
+                service: "اشتراك 12 شهر",
+                regDate: "2026-03-01"
             },
             {
                 id: 2,
@@ -673,7 +663,8 @@
                 email: "fatima@gmail.com",
                 degrees: "ماستر قانون",
                 school: "جامعة محمد الخامس",
-                service: "اشتراك 6 أشهر"
+                service: "اشتراك 6 أشهر",
+                regDate: "2026-03-02"
             },
             {
                 id: 3,
@@ -686,9 +677,10 @@
                 email: "youssef@gmail.com",
                 degrees: "بكالوريوس علوم اقتصادية",
                 school: "جامعة سيدي محمد بن عبدالله",
-                service: "تسجيل فوري"
+                service: "تسجيل فوري",
+                regDate: "2026-03-03"
             },
-                  {
+            {
                 id: 4,
                 nameAr: "كريمة السعدي",
                 nameFr: "Karima Saadi",
@@ -697,9 +689,10 @@
                 address: "حي جليز، مراكش",
                 whatsapp: "0645678901",
                 email: "karima@gmail.com",
-                degrees: "ماكر هندسة مدنية",
+                degrees: "ماستر هندسة مدنية",
                 school: "المدرسة المحمدية للمهندسين",
-                service: "تسجيل مجاني"
+                service: "تسجيل مجاني",
+                regDate: "2026-03-04"
             },
             {
                 id: 5,
@@ -712,7 +705,78 @@
                 email: "mohamed@gmail.com",
                 degrees: "بكالوريوس طب",
                 school: "كلية الطب بطنجة",
-                service: "اشتراك 12 شهر"
+                service: "اشتراك 12 شهر",
+                regDate: "2026-03-05"
+            },
+            {
+                id: 6,
+                nameAr: "سارة بناني",
+                nameFr: "Sara Benani",
+                birthDate: "1997-07-22",
+                birthPlace: "أكادير",
+                address: "شارع 20 غشت، أكادير",
+                whatsapp: "0667890123",
+                email: "sara@gmail.com",
+                degrees: "ماكر تسيير الموارد البشرية",
+                school: "جامعة ابن زهر",
+                service: "اشتراك 6 أشهر",
+                regDate: "2026-03-06"
+            },
+            {
+                id: 7,
+                nameAr: "عمر الفاسي",
+                nameFr: "Omar Fassi",
+                birthDate: "1995-09-18",
+                birthPlace: "وجدة",
+                address: "شارع محمد السادس، وجدة",
+                whatsapp: "0678901234",
+                email: "omar@gmail.com",
+                degrees: "بكالوريوس محاسبة",
+                school: "جامعة محمد الأول",
+                service: "تسجيل فوري",
+                regDate: "2026-03-07"
+            },
+            {
+                id: 8,
+                nameAr: "نادية العمري",
+                nameFr: "Nadia Omari",
+                birthDate: "1998-04-12",
+                birthPlace: "تطوان",
+                address: "شارع الحسن الأول، تطوان",
+                whatsapp: "0689012345",
+                email: "nadia@gmail.com",
+                degrees: "ماستر صحافة",
+                school: "جامعة عبد المالك السعدي",
+                service: "تسجيل مجاني",
+                regDate: "2026-03-08"
+            },
+            {
+                id: 9,
+                nameAr: "حسن المرابط",
+                nameFr: "Hassan Mrabet",
+                birthDate: "1996-08-30",
+                birthPlace: "مكناس",
+                address: "حي حمرية، مكناس",
+                whatsapp: "0690123456",
+                email: "hassan@gmail.com",
+                degrees: "بكالوريوس علوم سياسية",
+                school: "جامعة مولاي إسماعيل",
+                service: "اشتراك 12 شهر",
+                regDate: "2026-03-09"
+            },
+            {
+                id: 10,
+                nameAr: "ليلى الشرقي",
+                nameFr: "Laila Charki",
+                birthDate: "1997-11-03",
+                birthPlace: "العيون",
+                address: "شارع المطار، العيون",
+                whatsapp: "0601234567",
+                email: "laila@gmail.com",
+                degrees: "ماستر تنمية محلية",
+                school: "جامعة ابن طفيل",
+                service: "اشتراك 6 أشهر",
+                regDate: "2026-03-10"
             }
         ];
 
@@ -743,7 +807,95 @@
             return diffDays;
         }
 
-        // عرض أعياد الميلاد القريبة
+        // عرض المؤشرات
+        function displayStats() {
+            const total = registrations.length;
+            const thisMonth = registrations.filter(r => {
+                const regDate = new Date(r.regDate);
+                const now = new Date();
+                return regDate.getMonth() === now.getMonth() && regDate.getFullYear() === now.getFullYear();
+            }).length;
+            
+            const free = registrations.filter(r => r.service === "تسجيل مجاني").length;
+            
+            const ages = registrations.map(r => calculateAge(r.birthDate));
+            const avgAge = (ages.reduce((a, b) => a + b, 0) / ages.length).toFixed(1);
+            
+            const instant = registrations.filter(r => r.service === "تسجيل فوري").length;
+            const sixMonths = registrations.filter(r => r.service === "اشتراك 6 أشهر").length;
+            const twelveMonths = registrations.filter(r => r.service === "اشتراك 12 شهر").length;
+            
+            const uniqueDegrees = [...new Set(registrations.map(r => r.degrees.split(' ')[0]))].length;
+
+            const statsGrid = document.getElementById('statsGrid');
+            statsGrid.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>إجمالي المسجلين</h3>
+                        <div class="number">${total} <small>مستفيد</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>هذا الشهر</h3>
+                        <div class="number">${thisMonth} <small>مستفيد</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>التسجيل المجاني</h3>
+                        <div class="number">${free} <small>مستفيد</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>معدل الأعمار</h3>
+                        <div class="number">${avgAge} <small>سنة</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>تسجيل فوري</h3>
+                        <div class="number">${instant} <small>مستفيد</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>اشتراك 6 أشهر</h3>
+                        <div class="number">${sixMonths} <small>مستفيد</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>اشتراك 12 شهر</h3>
+                        <div class="number">${twelveMonths} <small>مستفيد</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>تنوع الشهادات</h3>
+                        <div class="number">${uniqueDegrees} <small>نوع</small></div>
+                    </div>
+                    <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                </div>
+            `;
+        }
+
+        // عرض أعياد الميلاد
         function displayBirthdays() {
             const birthdayList = document.getElementById('birthdayList');
             const upcomingBirthdays = registrations
@@ -761,11 +913,9 @@
 
             birthdayList.innerHTML = upcomingBirthdays.map(r => `
                 <div class="birthday-person">
-                    <i class="fas fa-birthday-cake"></i>
+                    <i class="fas fa-cake-candles"></i>
                     <span>${r.nameAr}</span>
-                    <span style="background: rgba(255,255,255,0.3); padding: 0.2rem 0.5rem; border-radius: 20px; font-size: 0.8rem;">
-                        بعد ${r.daysUntil} يوم
-                    </span>
+                    <span class="birthday-days">بعد ${r.daysUntil} يوم</span>
                 </div>
             `).join('');
         }
@@ -773,27 +923,39 @@
         // عرض الجدول
         function displayTable() {
             const tbody = document.getElementById('tableBody');
-            tbody.innerHTML = registrations.map((r, index) => `
-                <tr>
-                    <td>${index + 1}</td>
-                    <td>${r.nameAr}</td>
-                    <td>${r.nameFr}</td>
-                    <td>${r.birthDate}</td>
-                    <td>${calculateAge(r.birthDate)} سنة</td>
-                    <td>${r.birthPlace}</td>
-                    <td>${r.address}</td>
-                    <td>${r.whatsapp}</td>
-                    <td>${r.email}</td>
-                    <td>${r.degrees}</td>
-                    <td>${r.school}</td>
-                    <td>${r.service}</td>
-                </tr>
-            `).join('');
+            tbody.innerHTML = registrations.map((r, index) => {
+                const age = calculateAge(r.birthDate);
+                const serviceClass = r.service === "تسجيل مجاني" ? 'service-badge' : 'service-badge';
+                
+                return `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td><strong>${r.nameAr}</strong></td>
+                        <td>${r.nameFr}</td>
+                        <td>${r.birthDate}</td>
+                        <td>${age} سنة</td>
+                        <td>${r.birthPlace}</td>
+                        <td>${r.address}</td>
+                        <td>${r.whatsapp}</td>
+                        <td>${r.email}</td>
+                        <td>${r.degrees}</td>
+                        <td>${r.school}</td>
+                        <td>${r.regDate}</td>
+                        <td><span class="service-badge">${r.service}</span></td>
+                    </tr>
+                `;
+            }).join('');
         }
 
         // البحث في الجدول
         function searchTable() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            
+            if (!searchTerm) {
+                displayTable();
+                return;
+            }
+            
             const filtered = registrations.filter(r => 
                 r.nameAr.includes(searchTerm) || 
                 r.whatsapp.includes(searchTerm)
@@ -801,24 +963,28 @@
             
             const tbody = document.getElementById('tableBody');
             if (filtered.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="12" style="text-align: center;">لا توجد نتائج</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="13" style="text-align: center; padding: 2rem;">لا توجد نتائج للبحث</td></tr>';
             } else {
-                tbody.innerHTML = filtered.map((r, index) => `
-                    <tr>
-                        <td>${index + 1}</td>
-                        <td>${r.nameAr}</td>
-                        <td>${r.nameFr}</td>
-                        <td>${r.birthDate}</td>
-                        <td>${calculateAge(r.birthDate)} سنة</td>
-                        <td>${r.birthPlace}</td>
-                        <td>${r.address}</td>
-                        <td>${r.whatsapp}</td>
-                        <td>${r.email}</td>
-                        <td>${r.degrees}</td>
-                        <td>${r.school}</td>
-                        <td>${r.service}</td>
-                    </tr>
-                `).join('');
+                tbody.innerHTML = filtered.map((r, index) => {
+                    const age = calculateAge(r.birthDate);
+                    return `
+                        <tr>
+                            <td>${index + 1}</td>
+                            <td><strong>${r.nameAr}</strong></td>
+                            <td>${r.nameFr}</td>
+                            <td>${r.birthDate}</td>
+                            <td>${age} سنة</td>
+                            <td>${r.birthPlace}</td>
+                            <td>${r.address}</td>
+                            <td>${r.whatsapp}</td>
+                            <td>${r.email}</td>
+                            <td>${r.degrees}</td>
+                            <td>${r.school}</td>
+                            <td>${r.regDate}</td>
+                            <td><span class="service-badge">${r.service}</span></td>
+                        </tr>
+                    `;
+                }).join('');
             }
         }
 
@@ -828,7 +994,7 @@
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             document.getElementById('currentDate').textContent = today.toLocaleDateString('ar-MA', options);
             
-            // تاريخ هجري تقريبي
+            // تاريخ هجري
             const hijriOptions = { year: 'numeric', month: 'long', day: 'numeric', calendar: 'islamic' };
             document.getElementById('hijriDate').textContent = today.toLocaleDateString('ar-MA', hijriOptions);
         }
@@ -860,10 +1026,11 @@
         // تهيئة لوحة التحكم
         function initializeDashboard() {
             updateDate();
+            displayStats();
             displayBirthdays();
             displayTable();
             
-            // Charts
+            // Chart 1: Registrations
             const ctx1 = document.getElementById('registrationsChart').getContext('2d');
             new Chart(ctx1, {
                 type: 'line',
@@ -875,42 +1042,68 @@
                         borderColor: '#d97706',
                         backgroundColor: 'rgba(217, 119, 6, 0.05)',
                         tension: 0.3,
-                        fill: true
+                        fill: true,
+                        pointBackgroundColor: '#d97706',
+                        pointBorderColor: 'white',
+                        pointRadius: 4,
+                        pointHoverRadius: 6
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { display: false } }
+                    plugins: { 
+                        legend: { display: false },
+                        tooltip: { enabled: true }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
                 }
             });
+
+            // Chart 2: Degrees Distribution
+            const degreeCounts = {
+                'بكالوريوس': registrations.filter(r => r.degrees.includes('بكالوريوس')).length,
+                'ماستر': registrations.filter(r => r.degrees.includes('ماستر')).length,
+                'مهندس': registrations.filter(r => r.degrees.includes('مهندس')).length,
+                'دكتوراه': registrations.filter(r => r.degrees.includes('دكتوراه')).length,
+                'تقني': registrations.filter(r => r.degrees.includes('تقني')).length
+            };
 
             const ctx2 = document.getElementById('degreesChart').getContext('2d');
             new Chart(ctx2, {
                 type: 'doughnut',
                 data: {
-                    labels: ['بكالوريوس', 'ماستر', 'مهندس', 'دكتوراه', 'تقني'],
+                    labels: Object.keys(degreeCounts),
                     datasets: [{
-                        data: [45, 38, 24, 12, 37],
+                        data: Object.values(degreeCounts),
                         backgroundColor: ['#d97706', '#fbbf24', '#f59e0b', '#10b981', '#3b82f6'],
-                        borderWidth: 0
+                        borderWidth: 0,
+                        hoverOffset: 4
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { position: 'bottom' } }
+                    plugins: { 
+                        legend: { 
+                            position: 'bottom',
+                            labels: { font: { size: 10 } }
+                        }
+                    },
+                    cutout: '60%'
                 }
             });
         }
 
-        // تحديث كل يوم
+        // تحديث كل ساعة
         setInterval(() => {
             if (document.getElementById('dashboard').classList.contains('active')) {
                 updateDate();
                 displayBirthdays();
             }
-        }, 60000); // كل دقيقة
+        }, 3600000); // كل ساعة
     </script>
 </body>
 </html>
